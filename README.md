@@ -52,7 +52,8 @@
 ---
 
 ## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=robibiruk&theme=radical&no-frame=false&margin-w=4)  
+![]([https://github-profile-trophy.vercel.app/?username=robibiruk&theme=radical&no-frame=false&margin-w=4](https://github-profile-trophy.vercel.app/?username=robibiruk&theme=radical&no-frame=false&rank=stars
+))  
 
 ---
 
