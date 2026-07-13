@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Robel 👋</h1>
-<h3 align="center">PharmD Student × Full-Stack Developer, building AI-powered health-tech for Africa</h3>
+<h3 align="center">Pharmacy Student × Full-Stack Developer, building AI-powered health-tech for Africa</h3>
 
 <p align="center">
   🎓 3rd-year PharmD student at Addis Ababa University — clinical rotations at Black Lion Hospital<br/>
@@ -26,13 +26,13 @@
 
 ### 🚀 Featured Projects
 
-**[SahetIQ](#)** — AI clinical nutrition and drug-food interaction engine. One of my two flagship shipped projects; presented at the ALX Capstone hackathon (Kuriftu Africa Village).
+**[NIRA AI Assistant](https://github.com/Robibiruk/Nira-AI-Assistant)** — Locally-hosted, privacy-first AI assistant with a FastAPI backend and a React PWA frontend. NIRA chats with streaming voice, orchestrates tools (browser, terminal, files, weather, search), and can control your desktop — all through any free tool-capable OpenRouter model. Fully functional with OAuth-based plugin integrations.
+
+**[SahetIQ](#)** — AI clinical nutrition and drug-food interaction engine. Personal project, still in production.
 
 **[Atnasya](#)** — Menstrual and pregnancy tracking app. React/TypeScript/Vite/Tailwind/Zustand frontend on Netlify, Express/MongoDB/Firebase backend on Render, with a Gemini-powered AI assistant.
 
 **[EventHub](#)** — Two-sided event ticketing SaaS built on the MERN stack with Chapa payment integration.
-
-**Tigat School Platform** — Rebuilding a school's site from WordPress to a full MERN stack with a custom admin CMS, SMS/email notifications, and newsletter integration.
 
 **MedReminder** — Medication reminder app powered by the OpenRouter API.
 
@@ -48,7 +48,7 @@
 
 ### 🏆 GitHub Trophies
 
-![](https://github-profile-trophy.vercel.app/?username=robibiruk&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+[![trophy](https://github-trophies.devomb.com/?username=Robibiruk&theme=dark_lover&no-frame=false&no-bg=false&margin-w=4)](https://github.com/Robibiruk)
 
 ---
 
