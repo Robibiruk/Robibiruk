@@ -4,7 +4,6 @@
 <p align="center">
   🎓 3rd-year PharmD student at Addis Ababa University — clinical rotations at Black Lion Hospital<br/>
   💻 Self-taught full-stack MERN developer, freelancing for international clients<br/>
-  🎯 Long-term goal: MSc in Drug Discovery & Development at Uppsala University (applying Jan 2027)<br/>
   🌍 Building at the intersection of pharmacy and software — AI health-tech for underserved communities
 </p>
 
