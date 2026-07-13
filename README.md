@@ -2,7 +2,7 @@
 <h3 align="center">Pharmacy Student × Full-Stack Developer, building AI-powered health-tech for Africa</h3>
 
 <p align="center">
-  🎓 3rd-year PharmD student at Addis Ababa University — clinical rotations at Black Lion Hospital<br/>
+  🎓 3rd-year Pharmacy student at Addis Ababa University — clinical rotations at Black Lion Hospital<br/>
   💻 Self-taught full-stack MERN developer, freelancing for international clients<br/>
   🌍 Building at the intersection of pharmacy and software — AI health-tech for underserved communities
 </p>
