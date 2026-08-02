@@ -1,7 +1,3 @@
-<h1 align="center">
-  <img src="https://raw.githubusercontent.com/Robibiruk/PulseWatch/master/docs/screenshots/dashboard.png" width="100%" alt="PulseWatch Dashboard" style="border-radius:12px; margin-bottom:20px"/>
-</h1>
-
 <h1 align="center">Hi, I'm Robel 👋</h1>
 
 <h3 align="center">Full-Stack Developer · AI Engineer · Pharmacy Student</h3>
@@ -22,34 +18,13 @@
 
 ## 🚀 PulseWatch — My Flagship Project
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Robibiruk/PulseWatch/master/docs/screenshots/public-status.png" width="85%" alt="PulseWatch Public Status Page" style="border-radius:12px"/>
-</p>
-
 > **Self-hosted uptime monitoring with Telegram alerts and AI-explained incidents.**
 
-A full-stack monitoring platform that probes endpoints every minute, tracks uptime history, opens incidents automatically, sends alerts across 5 channels, and provides AI-powered root-cause explanations — all on free-tier infrastructure.
-
-| | |
-|:---|:---|
-| **Stack** | React · TypeScript · FastAPI · Python · PostgreSQL · Neon |
-| **Deploy** | Render (API) · Vercel (Frontend) · GitHub Actions (Worker Cron) |
-| **Live** | [pulsewatch-monitor.vercel.app](https://pulsewatch-monitor.vercel.app) |
-| **Source** | [github.com/Robibiruk/PulseWatch](https://github.com/Robibiruk/PulseWatch) |
+A full-stack monitoring platform that probes endpoints every minute, tracks uptime history, opens incidents automatically, sends alerts across 5 channels (Telegram, Email, Discord, Slack, Webhooks), and provides AI-powered root-cause explanations — all on free-tier infrastructure (Render + Vercel + Neon + GitHub Actions).
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Robibiruk/PulseWatch/master/docs/screenshots/login.png" width="40%" alt="PulseWatch Login" style="border-radius:12px; margin-right:8px"/>
-  <img src="https://raw.githubusercontent.com/Robibiruk/PulseWatch/master/docs/diagrams/architecture.svg" width="55%" alt="PulseWatch Architecture" style="border-radius:12px"/>
-</p>
-
----
-
-## 🧭 Observatory — My Portfolio
-
-<p align="center">
-  <a href="https://observatory-robel.vercel.app">
-    <img src="https://img.shields.io/badge/🌐_View_Portfolio-observatory--robel.vercel.app-34d399?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
-  </a>
+  <a href="https://pulsewatch-monitor.vercel.app"><img src="https://img.shields.io/badge/Live_Demo-34d399?style=for-the-badge" alt="Live Demo"/></a>
+  <a href="https://github.com/Robibiruk/PulseWatch"><img src="https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source"/></a>
 </p>
 
 ---
