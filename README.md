@@ -119,14 +119,16 @@ A full-stack monitoring platform that probes endpoints every minute, tracks upti
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Robibiruk&theme=radical&hide_border=false&include_all_commits=true&count_private=true&show_icons=true" height="180" alt="GitHub Stats"/>
+  <img src="https://github-stats-extended.vercel.app/api?username=Robibiruk&theme=radical&hide_border=false&include_all_commits=true&count_private=true&show_icons=true" height="180" alt="GitHub Stats"/>
   &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Robibiruk&theme=radical&hide_border=false&layout=compact&show_icons=true" height="180" alt="Top Languages"/>
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Robibiruk&theme=radical&hide_border=false&layout=compact&show_icons=true" height="180" alt="Top Languages"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Robibiruk&theme=radical&hide_border=false" width="600" alt="GitHub Streak"/>
+  <img src="https://streak-stats.demolab.com?user=Robibiruk&theme=radical&hide_border=false" width="600" alt="GitHub Streak"/>
 </p>
+
+<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Robibiruk&theme=radical&hide_border=false&layout=compact&langs_count=8" height="180" alt="Top Languages"/>
 
 ---
 
@@ -166,7 +168,7 @@ A full-stack monitoring platform that probes endpoints every minute, tracks upti
 ---
 
 <p align="center">
-  <img src="https://visitcount.itsvg.in/api?id=Robibiruk&icon=2&color=12" alt="Profile Views"/>
+  <img src="https://komarev.com/ghpvc/?username=Robibiruk&label=Profile%20Views&color=blueviolet&style=for-the-badge" alt="Profile Views"/>
 </p>
 
 <p align="center">
