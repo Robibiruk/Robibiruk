@@ -1,176 +1,284 @@
-<h1 align="center">Hi, I'm Robel 👋</h1>
+<!-- ============================================================
+     SPIDER-MAN GITHUB PROFILE — DevWrapped Theme
+     Theme: Spider-Verse | ID: spiderman
+     Built with: SMIL SVG animations, GitHub Actions, spider-lore
+     ============================================================ -->
 
-<h3 align="center">Full-Stack Developer · AI Engineer · Pharmacy Student</h3>
-
-<p align="center">
-  Building intelligent tools at the intersection of code, health, and language.<br/>
-  3rd-year Pharmacy student at Addis Ababa University, self-taught developer, freelancing internationally.
-</p>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/robel-biruk-5923101b5/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://github.com/Robibiruk"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-  <a href="https://t.me/iamrobiii"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/></a>
-  <a href="mailto:robekmedia@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-</p>
-
----
-
-## 🚀 PulseWatch — My Flagship Project
-
-> **Self-hosted uptime monitoring with Telegram alerts and AI-explained incidents.**
-
-A full-stack monitoring platform that probes endpoints every minute, tracks uptime history, opens incidents automatically, sends alerts across 5 channels (Telegram, Email, Discord, Slack, Webhooks), and provides AI-powered root-cause explanations — all on free-tier infrastructure (Render + Vercel + Neon + GitHub Actions).
-
-<p align="center">
-  <a href="https://pulsewatch-monitor.vercel.app"><img src="https://img.shields.io/badge/Live_Demo-34d399?style=for-the-badge" alt="Live Demo"/></a>
-  <a href="https://github.com/Robibiruk/PulseWatch"><img src="https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source"/></a>
-</p>
-
----
-
-## 🛠️ Tech Stack
-
-<p align="center">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
-  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python"/>
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"/>
-  <img src="https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/>
-  <img src="https://img.shields.io/badge/Express-404D59?style=for-the-badge&logo=express&logoColor=61DAFB" alt="Express"/>
-  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-  <img src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=firebase&logoColor=white" alt="Firebase"/>
-  <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js"/>
-  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion"/>
-</p>
-
----
-
-## 🚀 Featured Projects
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Robibiruk/PulseWatch">🔭 PulseWatch</a></h3>
-      <p>Full-stack uptime monitoring with Telegram alerts, AI-explained incidents, and public status pages. Distributed claim-locking for free-tier infra.</p>
-      <p><code>React</code> <code>TypeScript</code> <code>FastAPI</code> <code>Python</code> <code>PostgreSQL</code> <code>Neon</code></p>
-      <p>
-        <a href="https://pulsewatch-monitor.vercel.app"><img src="https://img.shields.io/badge/Live-34d399?style=flat" alt="Live"/></a>
-        <a href="https://github.com/Robibiruk/PulseWatch"><img src="https://img.shields.io/badge/Source-181717?style=flat&logo=github" alt="Source"/></a>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Robibiruk/Nira-AI-Assistant">🤖 Nira AI</a></h3>
-      <p>Local-first desktop AI assistant with streaming voice, reasoning, and tool use. Glass UI, pluggable backend, fully functional.</p>
-      <p><code>React</code> <code>Three.js</code> <code>FastAPI</code> <code>Firebase</code> <code>GSAP</code></p>
-      <p>
-        <a href="https://nira-ai-assistant.vercel.app"><img src="https://img.shields.io/badge/Live-34d399?style=flat" alt="Live"/></a>
-        <a href="https://github.com/Robibiruk/Nira-AI-Assistant"><img src="https://img.shields.io/badge/Source-181717?style=flat&logo=github" alt="Source"/></a>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Robibiruk/Medicine-Reminder-project">💊 MedReminder</a></h3>
-      <p>Medication reminder with AI scheduling. OpenRouter parses natural-language into structured reminders.</p>
-      <p><code>React</code> <code>Express</code> <code>MongoDB</code> <code>Recharts</code> <code>OpenRouter</code></p>
-      <p>
-        <a href="https://community-pharmacy-reminder.onrender.com"><img src="https://img.shields.io/badge/Live-34d399?style=flat" alt="Live"/></a>
-        <a href="https://github.com/Robibiruk/Medicine-Reminder-project"><img src="https://img.shields.io/badge/Source-181717?style=flat&logo=github" alt="Source"/></a>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Robibiruk/atnasya-health-frontend">🩺 Atnasya Health</a></h3>
-      <p>Menstrual and pregnancy tracking app with emoji UI, RTL support, and Gemini AI assistant.</p>
-      <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Tailwind</code> <code>Express</code> <code>MongoDB</code></p>
-      <p>
-        <a href="https://atnasya-health.netlify.app/"><img src="https://img.shields.io/badge/Live-34d399?style=flat" alt="Live"/></a>
-        <a href="https://github.com/Robibiruk/atnasya-health-frontend"><img src="https://img.shields.io/badge/Source-181717?style=flat&logo=github" alt="Source"/></a>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Robibiruk/clean-city">🏙️ Clean City</a></h3>
-      <p>Platform for reporting and restoring clean-city initiatives with data analysis and visualization.</p>
-      <p><code>React</code> <code>Vite</code> <code>Data Viz</code> <code>Charts</code></p>
-      <p>
-        <a href="https://clean-city-report.vercel.app/"><img src="https://img.shields.io/badge/Live-34d399?style=flat" alt="Live"/></a>
-        <a href="https://github.com/Robibiruk/clean-city"><img src="https://img.shields.io/badge/Source-181717?style=flat&logo=github" alt="Source"/></a>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://cord19-sample-analysis.streamlit.app/">📊 Data Analysis</a></h3>
-      <p>Jupyter Notebook analyzing datasets — cleaning, visualization, and Streamlit deployment.</p>
-      <p><code>Python</code> <code>Pandas</code> <code>Jupyter</code> <code>Streamlit</code></p>
-      <p>
-        <a href="https://cord19-sample-analysis.streamlit.app/"><img src="https://img.shields.io/badge/Live-34d399?style=flat" alt="Live"/></a>
-        <a href="https://github.com/Robibiruk/Data_Analaysis_Python_Week_7_Assignment"><img src="https://img.shields.io/badge/Source-181717?style=flat&logo=github" alt="Source"/></a>
-      </p>
-    </td>
-  </tr>
-</table>
-
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=Robibiruk&theme=radical&hide_border=false&include_all_commits=true&count_private=true&show_icons=true" height="180" alt="GitHub Stats"/>
-  &nbsp;&nbsp;
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Robibiruk&theme=radical&hide_border=false&layout=compact&show_icons=true" height="180" alt="Top Languages"/>
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Robibiruk&theme=radical&hide_border=false" width="600" alt="GitHub Streak"/>
-</p>
-
-<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Robibiruk&theme=radical&hide_border=false&layout=compact&langs_count=8" height="180" alt="Top Languages"/>
-
----
-
-## 🏆 GitHub Trophies
-
+<!-- HERO INTRO -->
 <p align="center">
   <a href="https://github.com/Robibiruk">
-    <img src="https://github-trophies.vercel.app/?username=Robibiruk&theme=dark_lover&no-frame=false&no-bg=false&column=7" width="100%" alt="GitHub Trophies"/>
+    <img src="assets/hero.svg" alt="Spider-Sense: Robel Biruk — Friendly Neighborhood Developer" width="100%">
   </a>
 </p>
 
----
+<!-- ============================================================
+     SECTION 02 — HERO PROFILE
+     ============================================================ -->
+<p align="center">
+  <img src="assets/web-divider.svg" alt="" width="100%">
+</p>
 
-## 🎯 Currently
+<p align="center">
+  <a href="https://github.com/Robibiruk">
+    <img src="https://readme-typing-svg.demolab.com?font=Impact&weight=900&size=42&duration=3000&pause=1.5&color=E62429&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=100&lines=%F0%9F%95%B5%EF%B8%8F+HERO+PROFILE;ROBEL+BIRUK" alt="Robel Biruk" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/%F0%9F%94%B4-PASSIVE_INCOME_ARCHITECT-E62429?style=for-the-badge&labelColor=081426" alt="Passive Income Architect">
+  <img src="https://img.shields.io/badge/%F0%9F%92%BB-SYSTEMS_THINKER-1976D2?style=for-the-badge&labelColor=081426" alt="Systems Thinker">
+  <img src="https://img.shields.io/badge/%F0%9F%A6%80+AI_NATIVE-E62429?style=for-the-badge&labelColor=081426" alt="AI Native">
+  <img src="https://img.shields.io/badge/%F0%9F%8C%8D+REMOTE-FIRST-2BD576?style=for-the-badge&labelColor=081426" alt="Remote First">
+</p>
+
+<p align="center">
+  <i>"With great code comes great responsibility."</i><br>
+  <sub>Built <b>PulseWatch</b> (uptime SaaS) and <b>Daftar</b> (merchant OS for Ethiopia's e-invoice mandate) — products that run while I sleep.</sub>
+</p>
+
+<!-- ============================================================
+     SECTION 03 — SPIDER-SENSE STATUS
+     ============================================================ -->
+<p align="center">
+  <img src="assets/web-divider.svg" alt="" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/Robibiruk">
+    <img src="assets/spider-sense.svg" alt="Spider-Sense: Online" width="100%">
+  </a>
+</p>
+
+<!-- ============================================================
+     SECTION 04 — HERO STATS (spider-lore terminology)
+     ============================================================ -->
+<p align="center">
+  <img src="assets/web-divider.svg" alt="" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/%E2%9A%A1+HERO+STATS-FF3340?style=for-the-badge&labelColor=081426&color=E62429" alt="Hero Stats">
+</p>
+
+<p align="center">
+  <a href="https://github.com/Robibiruk">
+    <img src="assets/hero-stats.svg" alt="Hero Stats — commits, PRs, streak, stars" width="100%">
+  </a>
+</p>
+
+<!-- ============================================================
+     SECTION 05 — WEB STREAK
+     ============================================================ -->
+<p align="center">
+  <img src="assets/web-divider.svg" alt="" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/%F0%9F%94%A5+WEB+STREAK-E62429?style=for-the-badge&labelColor=081426&color=FF3340" alt="Web Streak">
+</p>
+
+<p align="center">
+  <a href="https://github.com/Robibiruk">
+    <img src="assets/streak-stats.svg" alt="Web Streak — total contributions, current and longest streak" width="100%">
+  </a>
+</p>
+
+<!-- ============================================================
+     SECTION 06 — WEB ARSENAL
+     ============================================================ -->
+<p align="center">
+  <img src="assets/web-divider.svg" alt="" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/%F0%9F%94%A5+WEB+ARSENAL-FF3340?style=for-the-badge&labelColor=081426&color=E62429" alt="Web Arsenal">
+</p>
+
+<p align="center">
+  <a href="https://github.com/Robibiruk">
+    <img src="assets/web-arsenal.svg" alt="Web Arsenal — developer toolbox with real brand icons" width="100%">
+  </a>
+</p>
+
+<!-- ============================================================
+     SECTION 07 — WEB SWING (52-week activity)
+     ============================================================ -->
+<p align="center">
+  <img src="assets/web-divider.svg" alt="" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/Robibiruk">
+    <img src="assets/web-swing.svg" alt="Web Swing — 52-week activity skyline" width="100%">
+  </a>
+</p>
+
+<!-- ============================================================
+     SECTION 08 — CURRENT MISSION (flagship project)
+     ============================================================ -->
+<p align="center">
+  <img src="assets/web-divider.svg" alt="" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/%F0%9F%8E%AF+CURRENT+MISSION-E62429?style=for-the-badge&labelColor=081426&color=FF3340" alt="Current Mission">
+</p>
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <h3>🔥 Building</h3>
-      <ul>
-        <li><b>PulseWatch</b> — uptime monitoring platform (live)</li>
-        <li><b>Nira AI</b> — desktop AI assistant (live)</li>
-        <li><b>EventHub</b> — Ethiopian event ticketing (in development)</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h3>📚 Learning</h3>
-      <ul>
-        <li>Applied LLM agents & tool-calling</li>
-        <li>Distributed systems & edge inference</li>
-        <li>Clinical pharmacy (Black Lion Hospital rotations)</li>
-      </ul>
+    <td width="100%" valign="top">
+      <h3><a href="https://github.com/Robibiruk/PulseWatch">PulseWatch</a></h3>
+      <p><b>Uptime monitoring SaaS</b> — a full-stack platform that tracks website and API availability in real-time, with intelligent alerting and performance analytics.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Stack-FastAPI-081426?style=flat-square&logo=fastapi&labelColor=081426&color=E62429" alt="FastAPI">
+        <img src="https://img.shields.io/badge/Stack-React-081426?style=flat-square&logo=react&labelColor=081426&color=1976D2" alt="React">
+        <img src="https://img.shields.io/badge/Deploy-Render-081426?style=flat-square&logo=render&labelColor=081426&color=8B9BB4" alt="Render">
+        <img src="https://img.shields.io/badge/Deploy-Vercel-081426?style=flat-square&logo=vercel&labelColor=081426&color=EAF2FF" alt="Vercel">
+      </p>
+      <p>
+        <img src="https://img.shields.io/badge/Status-%F0%9F%94%B4+LIVE-2BD576?style=flat-square&labelColor=081426" alt="Live">
+        <img src="https://img.shields.io/badge/9--Agent_Security_Review-passed-E62429?style=flat-square&labelColor=081426" alt="Security Reviewed">
+      </p>
     </td>
   </tr>
 </table>
 
----
-
+<!-- ============================================================
+     SECTION 09 — WEB MISSIONS (project cards)
+     ============================================================ -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Robibiruk&label=Profile%20Views&color=blueviolet&style=for-the-badge" alt="Profile Views"/>
+  <img src="assets/web-divider.svg" alt="" width="100%">
 </p>
 
 <p align="center">
-  <i>"Building intelligent tools at the intersection of code, health, and language."</i>
+  <img src="https://img.shields.io/badge/%F0%9F%8E%AF+WEB+MISSIONS-1976D2?style=for-the-badge&labelColor=081426" alt="Web Missions">
 </p>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Robibiruk/Daftar">Daftar</a></h3>
+      <p>Merchant records OS built for Ethiopia's e-invoice mandate. Captures the cash-side operations data that credit rails miss — the real moat.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Status-Active-E62429?style=flat-square&labelColor=081426" alt="Active">
+        <img src="https://img.shields.io/badge/Domain-Fintech-1976D2?style=flat-square&labelColor=081426" alt="Fintech">
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Robibiruk/Nira-AI-Assistant">Nira AI</a></h3>
+      <p>AI-powered assistant framework. Multi-modal reasoning engine with tool-use capabilities and structured output generation.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Status-Active-1976D2?style=flat-square&labelColor=081426" alt="Active">
+        <img src="https://img.shields.io/badge/Domain-AI/ML-E62429?style=flat-square&labelColor=081426" alt="AI/ML">
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Robibiruk/atnasya-health-frontend">Atnasya Health</a></h3>
+      <p>Health-tech platform for accessible healthcare data management and patient engagement in emerging markets.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Status-Development-FF3340?style=flat-square&labelColor=081426" alt="In Development">
+        <img src="https://img.shields.io/badge/Domain-HealthTech-2BD576?style=flat-square&labelColor=081426" alt="HealthTech">
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Robibiruk/DevWrapped">DevWrapped</a></h3>
+      <p>GitHub Wrapped story app — 12 superhero theme packs that transform developer profiles into immersive, animated narratives.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Themes-12-E62429?style=flat-square&labelColor=081426" alt="12 Themes">
+        <img src="https://img.shields.io/badge/Stack-React+%7C+Vite+%7C+CF-1976D2?style=flat-square&labelColor=081426" alt="React Vite Cloudflare">
+      </p>
+    </td>
+  </tr>
+</table>
+
+<!-- ============================================================
+     SECTION 10 — HERO ACHIEVEMENTS
+     ============================================================ -->
+<p align="center">
+  <img src="assets/web-divider.svg" alt="" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/%F0%9F%8F%86+HERO+ACHIEVEMENTS-E62429?style=for-the-badge&labelColor=081426&color=FF3340" alt="Hero Achievements">
+</p>
+
+<p align="center">
+  <a href="https://github.com/Robibiruk">
+    <img src="assets/achievements.svg" alt="Hero Achievements — Spider-Verse Comic Badges" width="100%">
+  </a>
+</p>
+
+<!-- ============================================================
+     SECTION 11 — CONTRIBUTION CITY
+     ============================================================ -->
+<p align="center">
+  <img src="assets/web-divider.svg" alt="" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/%F0%9F%8F%99%EF%B8%8F+CONTRIBUTION+CITY-1976D2?style=for-the-badge&labelColor=081426&color=E62429" alt="Contribution City">
+</p>
+
+<p align="center">
+  <a href="https://github.com/Robibiruk">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Robibiruk&bg_color=081426&color=E62429&line=FF3340&point=EAF2FF&area=true&area_color=1976D2&hide_border=true&custom_title=CONTRIBUTION%20ACTIVITY%20GRAPH" alt="Activity Graph" width="100%">
+  </a>
+</p>
+
+<!-- ============================================================
+     SECTION 12 — SPIDER-SENSE NETWORK (socials)
+     ============================================================ -->
+<p align="center">
+  <img src="assets/web-divider.svg" alt="" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/%F0%9F%93%A1+SPIDER-SENSE+NETWORK-1976D2?style=for-the-badge&labelColor=081426" alt="Spider-Sense Network">
+</p>
+
+<p align="center">
+  <a href="https://linkedin.com/in/robelbiruk">
+    <img src="https://img.shields.io/badge/LinkedIn-E62429?style=for-the-badge&logo=linkedin&logoColor=EAF2FF&labelColor=081426" alt="LinkedIn">
+  </a>
+  <a href="mailto:robel@example.com">
+    <img src="https://img.shields.io/badge/Email-1976D2?style=for-the-badge&logo=gmail&logoColor=EAF2FF&labelColor=081426" alt="Email">
+  </a>
+  <a href="https://dev.to/robelbiruk">
+    <img src="https://img.shields.io/badge/Dev.to-FF3340?style=for-the-badge&logo=dev.to&logoColor=EAF2FF&labelColor=081426" alt="Dev.to">
+  </a>
+  <a href="https://twitter.com/robelbiruk">
+    <img src="https://img.shields.io/badge/X-8B9BB4?style=for-the-badge&logo=x&logoColor=EAF2FF&labelColor=081426" alt="X/Twitter">
+  </a>
+</p>
+
+<p align="center">
+  <i>Open to collaborations, consultations, and friendly neighborhood developer meetups.</i>
+</p>
+
+<!-- ============================================================
+     SECTION 13 — FOOTER
+     ============================================================ -->
+<p align="center">
+  <img src="assets/web-divider.svg" alt="" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/Robibiruk">
+    <img src="assets/footer.svg" alt="The web never sleeps. Neither does the developer." width="100%">
+  </a>
+</p>
+
+<!-- Visitor Counter (optional) -->
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Robibiruk&color=E62429&style=for-the-badge&label=SPIDER-SENSE+VISITORS&labelColor=081426" alt="Visitor Count">
+</p>
+
+<!-- ============================================================
+     BUILD INFO
+     Generated by: DevWrapped Spider-Man theme engine
+     Theme version: 1.0.0
+     Assets: 9 animated SVGs (hero, divider, spider-sense, hero-stats, streak-stats, footer, web-arsenal, web-swing, achievements)
+     To refresh data: python tools/generate.py --username Robibiruk
+     ============================================================ -->
