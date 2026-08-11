@@ -20,7 +20,7 @@
 
 <p align="center">
   <a href="https://github.com/Robibiruk">
-    <img src="https://readme-typing-svg.demolab.com?font=Impact&weight=900&size=42&duration=3000&pause=1.5&color=E62429&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=100&lines=%F0%9F%95%B5%EF%B8%8F+HERO+PROFILE;ROBEL+BIRUK" alt="Robel Biruk" />
+    <img src="https://readme-typing-svg.demolab.com?font=Impact&weight=900&size=42&duration=3000&pause=1.5&color=E62429&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=100&lines=ROBEL+BIRUK" alt="Robel Biruk" />
   </a>
 </p>
 
@@ -33,7 +33,7 @@
 
 <p align="center">
   <i>"With great code comes great responsibility."</i><br>
-  <sub>Built <b>PulseWatch</b> (uptime SaaS) and <b>Daftar</b> (merchant OS for Ethiopia's e-invoice mandate) — products that run while I sleep.</sub>
+  <sub>Built <b>PulseWatch</b> (uptime SaaS) — a product that runs while I sleep.</sub>
 </p>
 
 <!-- ============================================================
@@ -127,7 +127,7 @@
 <table>
   <tr>
     <td width="100%" valign="top">
-      <h3><a href="https://github.com/Robibiruk/PulseWatch">PulseWatch</a></h3>
+      <h3>PulseWatch</h3>
       <p><b>Uptime monitoring SaaS</b> — a full-stack platform that tracks website and API availability in real-time, with intelligent alerting and performance analytics.</p>
       <p>
         <img src="https://img.shields.io/badge/Stack-FastAPI-081426?style=flat-square&logo=fastapi&labelColor=081426&color=E62429" alt="FastAPI">
@@ -138,6 +138,10 @@
       <p>
         <img src="https://img.shields.io/badge/Status-%F0%9F%94%B4+LIVE-2BD576?style=flat-square&labelColor=081426" alt="Live">
         <img src="https://img.shields.io/badge/9--Agent_Security_Review-passed-E62429?style=flat-square&labelColor=081426" alt="Security Reviewed">
+      </p>
+      <p>
+        <a href="https://github.com/Robibiruk/PulseWatch"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://pulsewatch-monitor.vercel.app/"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
       </p>
     </td>
   </tr>
@@ -157,37 +161,55 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/Robibiruk/Daftar">Daftar</a></h3>
-      <p>Merchant records OS built for Ethiopia's e-invoice mandate. Captures the cash-side operations data that credit rails miss — the real moat.</p>
+      <h3>PulseWatch</h3>
+      <p>Self-hosted uptime monitoring with Telegram alerts, AI-explained incidents, and public status pages. FastAPI + React/Vite/TS.</p>
       <p>
-        <img src="https://img.shields.io/badge/Status-Active-E62429?style=flat-square&labelColor=081426" alt="Active">
-        <img src="https://img.shields.io/badge/Domain-Fintech-1976D2?style=flat-square&labelColor=081426" alt="Fintech">
+        <a href="https://github.com/Robibiruk/PulseWatch"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://pulsewatch-monitor.vercel.app/"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/Robibiruk/Nira-AI-Assistant">Nira AI</a></h3>
-      <p>AI-powered assistant framework. Multi-modal reasoning engine with tool-use capabilities and structured output generation.</p>
+      <h3>RepoPages</h3>
+      <p>Turn any GitHub repository into a beautiful, AI-generated product website. RepoPages analyzes your README, codebase, and project metadata to generate polished landing pages you can customize.</p>
       <p>
-        <img src="https://img.shields.io/badge/Status-Active-1976D2?style=flat-square&labelColor=081426" alt="Active">
-        <img src="https://img.shields.io/badge/Domain-AI/ML-E62429?style=flat-square&labelColor=081426" alt="AI/ML">
+        <a href="https://github.com/Robibiruk/Repo-to-Landing-page"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://repo-to-landing-page.vercel.app/"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
       </p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/Robibiruk/atnasya-health-frontend">Atnasya Health</a></h3>
-      <p>Health-tech platform for accessible healthcare data management and patient engagement in emerging markets.</p>
+      <h3>DevWrapped</h3>
+      <p>Turn your GitHub activity into a beautiful, shareable annual story. Discover your coding stats, streaks, personality, and developer archetype.</p>
       <p>
-        <img src="https://img.shields.io/badge/Status-Development-FF3340?style=flat-square&labelColor=081426" alt="In Development">
-        <img src="https://img.shields.io/badge/Domain-HealthTech-2BD576?style=flat-square&labelColor=081426" alt="HealthTech">
+        <a href="https://github.com/Robibiruk/DevWrapped"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://devwrapped-app.vercel.app/"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/Robibiruk/DevWrapped">DevWrapped</a></h3>
-      <p>GitHub Wrapped story app — 12 superhero theme packs that transform developer profiles into immersive, animated narratives.</p>
+      <h3>Nira AI</h3>
+      <p>Locally-hosted, privacy-first AI assistant with a FastAPI backend and a React PWA frontend. Streams voice replies and orchestrates tools — browser, terminal, files, weather, search.</p>
       <p>
-        <img src="https://img.shields.io/badge/Themes-12-E62429?style=flat-square&labelColor=081426" alt="12 Themes">
-        <img src="https://img.shields.io/badge/Stack-React+%7C+Vite+%7C+CF-1976D2?style=flat-square&labelColor=081426" alt="React Vite Cloudflare">
+        <a href="https://github.com/Robibiruk/Nira-AI-Assistant"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://nira-ai-assistant.vercel.app/"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Clean City</h3>
+      <p>Community environmental issue reporting app — report trash, pollution &amp; hazards on an interactive map. React + Vite + Leaflet frontend, Express + MongoDB backend.</p>
+      <p>
+        <a href="https://github.com/Robibiruk/clean-city"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://clean-city-report.vercel.app/"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Atnasya Health</h3>
+      <p>Full-stack menstrual cycle tracking app with period prediction, symptom logging, and cycle history analytics.</p>
+      <p>
+        <a href="https://github.com/Robibiruk/atnasya-health-frontend"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://atnasya-health.netlify.app/"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
       </p>
     </td>
   </tr>
