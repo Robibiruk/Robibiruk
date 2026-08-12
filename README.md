@@ -240,7 +240,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/%F0%9F%8F%99%EF%B8%8F+CONTRIBUTION+CITY-1976D2?style=for-the-badge&labelColor=081426&color=E62429" alt="Contribution Graph">
+  <img src="https://img.shields.io/badge/%F0%9F%8F%99%EF%B8%8F+CONTRIBUTION+GRAPH-1976D2?style=for-the-badge&labelColor=081426&color=E62429" alt="Contribution Graph">
 </p>
 
 <p align="center">
