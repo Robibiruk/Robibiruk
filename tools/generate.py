@@ -466,12 +466,12 @@ def tech_icon(slug, cx, cy, size=1.0):
 
 
 ARSENAL_GROUPS = [
-    ("CORE LANGUAGES",   BLUE,      ["python", "typescript", "javascript", "html5", "css3"]),
-    ("AI & ML",          "#2BD576", ["jupyter", "openrouter"]),
-    ("BACKEND",          RED,       ["fastapi", "nodedotjs"]),
-    ("FRONTEND",         BRIGHT,    ["react", "vite"]),
-    ("DATABASES",        MUTED,     ["postgresql"]),
-    ("DEPLOY & DEV-OPS", BLUE,      ["docker", "vercel", "render", "cloudflare", "githubactions"]),
+    ("CORE LANGUAGES",  BLUE,      ["python", "typescript", "javascript", "html5", "css3"]),
+    ("AI · ML · DATA",  "#2BD576", ["pytorch", "huggingface", "scikitlearn", "numpy", "pandas", "jupyter"]),
+    ("BACKEND",         RED,       ["fastapi", "nodedotjs", "express"]),
+    ("FRONTEND",        BRIGHT,    ["react", "nextdotjs", "vite", "tailwindcss"]),
+    ("DATABASES",       MUTED,     ["postgresql", "mongodb", "mysql"]),
+    ("TOOLS & DEV-OPS", BLUE,      ["docker", "git", "vercel", "render", "cloudflare", "githubactions"]),
 ]
 
 

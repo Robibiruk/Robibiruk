@@ -233,14 +233,14 @@
 </p>
 
 <!-- ============================================================
-     SECTION 11 — CONTRIBUTION CITY
+     SECTION 11 — CONTRIBUTION GRAPH
      ============================================================ -->
 <p align="center">
   <img src="assets/web-divider.svg" alt="" width="100%">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/%F0%9F%8F%99%EF%B8%8F+CONTRIBUTION+CITY-1976D2?style=for-the-badge&labelColor=081426&color=E62429" alt="Contribution City">
+  <img src="https://img.shields.io/badge/%F0%9F%8F%99%EF%B8%8F+CONTRIBUTION+CITY-1976D2?style=for-the-badge&labelColor=081426&color=E62429" alt="Contribution Graph">
 </p>
 
 <p align="center">
@@ -261,16 +261,16 @@
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/robelbiruk">
+  <a href="https://www.linkedin.com/in/robel-biruk-5923101b5/">
     <img src="https://img.shields.io/badge/LinkedIn-E62429?style=for-the-badge&logo=linkedin&logoColor=EAF2FF&labelColor=081426" alt="LinkedIn">
   </a>
-  <a href="mailto:robel@example.com">
+  <a href="mailto:natim7520@gmail.com">
     <img src="https://img.shields.io/badge/Email-1976D2?style=for-the-badge&logo=gmail&logoColor=EAF2FF&labelColor=081426" alt="Email">
   </a>
-  <a href="https://dev.to/robelbiruk">
+  <a href="https://robelbiruk.netlify.app">
     <img src="https://img.shields.io/badge/Dev.to-FF3340?style=for-the-badge&logo=dev.to&logoColor=EAF2FF&labelColor=081426" alt="Dev.to">
   </a>
-  <a href="https://twitter.com/robelbiruk">
+  <a href="https://x.com/ynwrobii">
     <img src="https://img.shields.io/badge/X-8B9BB4?style=for-the-badge&logo=x&logoColor=EAF2FF&labelColor=081426" alt="X/Twitter">
   </a>
 </p>
