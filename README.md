@@ -62,7 +62,7 @@
 
 <p align="center">
   <a href="https://github.com/Robibiruk">
-    <img src="assets/hero-stats.svg" alt="Hero Stats — commits, PRs, streak, stars" width="100%">
+    <img src="https://spidey-stats.robekmedia-723.workers.dev/Robibiruk/hero-stats.svg" alt="Hero Stats — commits, PRs, streak, stars" width="100%">
   </a>
 </p>
 
@@ -196,7 +196,7 @@
     </td>
     <td width="50%" valign="top">
       <h3>spiderman-github-readme</h3>
-      <p></p>
+      <p>Turn your GitHub profile into an animated, Spider-Verse comic-book README — with zero backend and two ways to keep the stats fresh.</p>
       <p>
         <a href="https://github.com/Robibiruk/spiderman-github-readme"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
       </p>
@@ -217,7 +217,7 @@
 
 <p align="center">
   <a href="https://github.com/Robibiruk">
-    <img src="assets/achievements.svg" alt="Hero Achievements — Spider-Verse Comic Badges" width="100%">
+    <img src="https://spidey-stats.robekmedia-723.workers.dev/Robibiruk/achievements.svg" alt="Hero Achievements — Spider-Verse Comic Badges" width="100%">
   </a>
 </p>
 
