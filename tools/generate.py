@@ -3,13 +3,13 @@
 DevWrapped: Spider-Man theme generator.
 
 Renders the data-driven SVG assets for the profile README:
-  * assets/web-swing.svg          — contribution rhythm as a web swing over the city
-  * assets/web-arsenal.svg        — categorized tech toolbox with real brand icons
+  * assets/swing.svg              — contribution rhythm as a web swing over the city
+  * assets/arsenal.svg            — categorized tech toolbox with real brand icons
   * assets/achievements.svg       — rank-card achievements + hero XP bar
   * assets/hero-stats.svg         — headline stats + letter-grade rating calculator
-  * assets/streak-stats.svg       — streak pulse: current/longest streak + totals
+  * assets/streak.svg             — streak pulse: current/longest streak + totals
 
-Tech icons in web-arsenal.svg come from simple-icons (CC0 1.0), embedded as
+Tech icons in arsenal.svg come from simple-icons (CC0 1.0), embedded as
 path data in tools/tech_icons.py so the SVG needs no external requests.
 
 Data sources:
@@ -466,12 +466,12 @@ def tech_icon(slug, cx, cy, size=1.0):
 
 
 ARSENAL_GROUPS = [
-    ("CORE LANGUAGES",  BLUE,      ["python", "typescript", "javascript", "html5", "css3"]),
-    ("AI · ML · DATA",  "#2BD576", ["pytorch", "huggingface", "scikitlearn", "numpy", "pandas", "jupyter"]),
-    ("BACKEND",         RED,       ["fastapi", "nodedotjs", "express"]),
-    ("FRONTEND",        BRIGHT,    ["react", "nextdotjs", "vite", "tailwindcss"]),
-    ("DATABASES",       MUTED,     ["postgresql", "mongodb", "mysql"]),
-    ("TOOLS & DEV-OPS", BLUE,      ["docker", "git", "vercel", "render", "cloudflare", "githubactions"]),
+    ("CORE LANGUAGES",   BLUE,      ["python", "typescript", "javascript", "html5", "css3"]),
+    ("AI & ML",          "#2BD576", ["jupyter", "openrouter"]),
+    ("BACKEND",          RED,       ["fastapi", "nodedotjs"]),
+    ("FRONTEND",         BRIGHT,    ["react", "vite"]),
+    ("DATABASES",        MUTED,     ["postgresql"]),
+    ("DEPLOY & DEV-OPS", BLUE,      ["docker", "vercel", "render", "cloudflare", "githubactions"]),
 ]
 
 
@@ -894,17 +894,17 @@ def main():
     if langs is None:
         langs = demo_languages(args.username)
 
-    (out / "web-swing.svg").write_text(build_swing_svg(weeks, real), encoding="utf-8")
-    (out / "web-arsenal.svg").write_text(build_arsenal_svg(real), encoding="utf-8")
+    (out / "swing.svg").write_text(build_swing_svg(weeks, real), encoding="utf-8")
+    (out / "arsenal.svg").write_text(build_arsenal_svg(real), encoding="utf-8")
     (out / "achievements.svg").write_text(build_achievements_svg(hero, langs, real), encoding="utf-8")
     (out / "hero-stats.svg").write_text(
         build_hero_stats_svg(hero, real, langs[0] if langs else ("OTHER", 1.0)), encoding="utf-8")
-    (out / "streak-stats.svg").write_text(build_streak_svg(hero, real), encoding="utf-8")
-    print(f"wrote {out / 'web-swing.svg'}  ({'live' if real else 'demo'} data)")
-    print(f"wrote {out / 'web-arsenal.svg'}  ({sum(len(i) for _, _, i in ARSENAL_GROUPS)} weapons)")
+    (out / "streak.svg").write_text(build_streak_svg(hero, real), encoding="utf-8")
+    print(f"wrote {out / 'swing.svg'}  ({'live' if real else 'demo'} data)")
+    print(f"wrote {out / 'arsenal.svg'}  ({sum(len(i) for _, _, i in ARSENAL_GROUPS)} weapons)")
     print(f"wrote {out / 'achievements.svg'}  (rank cards + XP)")
     print(f"wrote {out / 'hero-stats.svg'}  ({'live' if real else 'demo'} grade)")
-    print(f"wrote {out / 'streak-stats.svg'}  (streak pulse)")
+    print(f"wrote {out / 'streak.svg'}  (streak pulse)")
 
 
 if __name__ == "__main__":

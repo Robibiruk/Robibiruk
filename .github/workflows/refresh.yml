@@ -28,7 +28,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/web-arsenal.svg assets/web-swing.svg assets/achievements.svg assets/hero-stats.svg assets/streak-stats.svg
+          git add assets/arsenal.svg assets/swing.svg assets/achievements.svg assets/hero-stats.svg assets/streak.svg
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
