@@ -6,7 +6,7 @@
 
 <!-- HERO INTRO -->
 <p align="center">
-  <a href="https://github.com/robibiruk">
+  <a href="https://github.com/Robibiruk">
     <img src="assets/hero.svg" alt="Spider-Sense: ROBEL BIRUK, Friendly Neighborhood Developer" width="100%"/>
   </a>
 </p>
@@ -19,8 +19,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/robibiruk">
-    <img src="https://readme-typing-svg.demolab.com?font=Impact&weight=900&size=42&duration=3000&pause=1.5&color=E62429&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=100&lines=ROBEL+BIRUK;FULL-STACK+DEVELOPER+%C2%B7+AI+ENGINEER+%C2%B7+FUTURE-PHARMACIST" alt="ROBEL BIRUK" />
+  <a href="https://github.com/Robibiruk">
+    <img src="https://readme-typing-svg.demolab.com?font=Impact&weight=900&size=42&duration=3000&pause=1.5&color=E62429&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=100&lines=ROBEL+BIRUK;PHARMACY+STUDENT+%C2%B7+FULL-STACK+DEVELOPER+%C2%B7+AI+ENGINEER" alt="ROBEL BIRUK" />
   </a>
 </p>
 
@@ -44,7 +44,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/robibiruk">
+  <a href="https://github.com/Robibiruk">
     <img src="assets/spider-sense.svg" alt="Spider-Sense: Online" width="100%">
   </a>
 </p>
@@ -61,8 +61,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/robibiruk">
-    <img src="https://spidey-stats.robekmedia-723.workers.dev/robibiruk/hero-stats.svg" alt="Hero Stats — commits, PRs, streak, stars" width="100%">
+  <a href="https://github.com/Robibiruk">
+    <img src="assets/hero-stats.svg" alt="Hero Stats — commits, PRs, streak, stars" width="100%">
   </a>
 </p>
 
@@ -78,7 +78,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/robibiruk">
+  <a href="https://github.com/Robibiruk">
     <img src="assets/streak-stats.svg" alt="Web Streak — total contributions, current and longest streak" width="100%">
   </a>
 </p>
@@ -95,7 +95,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/robibiruk">
+  <a href="https://github.com/Robibiruk">
     <img src="assets/web-arsenal.svg" alt="Web Arsenal — developer toolbox with real brand icons" width="100%">
   </a>
 </p>
@@ -108,7 +108,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/robibiruk">
+  <a href="https://github.com/Robibiruk">
     <img src="assets/web-swing.svg" alt="Web Swing — 52-week activity skyline" width="100%">
   </a>
 </p>
@@ -130,7 +130,7 @@
       <h3>PulseWatch</h3>
       <p>Self-hosted uptime monitoring with Telegram alerts, AI-explained incidents, and public status pages. FastAPI + React/Vite/TS.</p>
       <p>
-        <a href="https://github.com/robibiruk/PulseWatch"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://github.com/Robibiruk/PulseWatch"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
         <a href="https://pulsewatch-monitor.vercel.app"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
       </p>
     </td>
@@ -154,7 +154,7 @@
       <h3>PulseWatch</h3>
       <p>Self-hosted uptime monitoring with Telegram alerts, AI-explained incidents, and public status pages. FastAPI + React/Vite/TS.</p>
       <p>
-        <a href="https://github.com/robibiruk/PulseWatch"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://github.com/Robibiruk/PulseWatch"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
         <a href="https://pulsewatch-monitor.vercel.app"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
       </p>
     </td>
@@ -162,7 +162,7 @@
       <h3>Repo-to-Landing-page</h3>
       <p>Turn any GitHub repository into a beautiful, AI-generated product website. RepoPages analyzes your README, codebase, and project metadata to generate polished landing pages that you can customize, export, and deploy in minutes.</p>
       <p>
-        <a href="https://github.com/robibiruk/Repo-to-Landing-page"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://github.com/Robibiruk/Repo-to-Landing-page"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
         <a href="https://repo-to-landing-page.vercel.app"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
       </p>
     </td>
@@ -172,7 +172,7 @@
       <h3>DevWrapped</h3>
       <p>Turn your GitHub activity into a beautiful, shareable annual story. Discover your coding stats, streaks, personality, and developer archetype with DevWrapped.</p>
       <p>
-        <a href="https://github.com/robibiruk/DevWrapped"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://github.com/Robibiruk/DevWrapped"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
         <a href="https://devwrapped-app.vercel.app"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
       </p>
     </td>
@@ -180,7 +180,7 @@
       <h3>Nira-AI-Assistant</h3>
       <p>Locally-hosted, privacy-first AI assistant with a FastAPI backend and a React PWA frontend. NIRA chats with streaming voice, orchestrates tools (browser, terminal, files, weather, search), and can control your desktop — all through any free tool-capable OpenRouter model.</p>
       <p>
-        <a href="https://github.com/robibiruk/Nira-AI-Assistant"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://github.com/Robibiruk/Nira-AI-Assistant"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
         <a href="https://nira-ai-assistant.vercel.app"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
       </p>
     </td>
@@ -190,7 +190,7 @@
       <h3>clean-city</h3>
       <p>Community environmental issue reporting app — report trash, pollution &amp; hazards on an interactive map (React + Vite + Leaflet frontend, Express + MongoDB backend).</p>
       <p>
-        <a href="https://github.com/robibiruk/clean-city"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://github.com/Robibiruk/clean-city"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
         <a href="https://clean-city-report.vercel.app/"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
       </p>
     </td>
@@ -198,7 +198,8 @@
       <h3>spiderman-github-readme</h3>
       <p>Turn your GitHub profile into an animated, Spider-Verse comic-book README — with zero backend and two ways to keep the stats fresh.</p>
       <p>
-        <a href="https://github.com/robibiruk/spiderman-github-readme"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://github.com/Robibiruk/spiderman-github-readme"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
+        <a href="https://spiderman-github-readme.vercel.app"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
       </p>
     </td>
   </tr>
@@ -216,8 +217,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/robibiruk">
-    <img src="https://spidey-stats.robekmedia-723.workers.dev/robibiruk/achievements.svg" alt="Hero Achievements — Spider-Verse Comic Badges" width="100%">
+  <a href="https://github.com/Robibiruk">
+    <img src="assets/achievements.svg" alt="Hero Achievements — Spider-Verse Comic Badges" width="100%">
   </a>
 </p>
 
@@ -233,8 +234,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/robibiruk">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=robibiruk&bg_color=081426&color=E62429&line=FF3340&point=EAF2FF&area=true&area_color=1976D2&hide_border=true&custom_title=CONTRIBUTION%20ACTIVITY%20GRAPH" alt="Activity Graph" width="100%">
+  <a href="https://github.com/Robibiruk">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Robibiruk&bg_color=081426&color=E62429&line=FF3340&point=EAF2FF&area=true&area_color=1976D2&hide_border=true&custom_title=CONTRIBUTION%20ACTIVITY%20GRAPH" alt="Activity Graph" width="100%">
   </a>
 </p>
 
@@ -249,14 +250,7 @@
   <img src="https://img.shields.io/badge/%F0%9F%93%A1+SPIDER-SENSE+NETWORK-1976D2?style=for-the-badge&labelColor=081426" alt="Spider-Sense Network">
 </p>
 
-<p align="center">
-  <a href="www.linkedin.com/in/robel-biruk-5923101b5"><img src="https://img.shields.io/badge/LinkedIn-E62429?style=for-the-badge&logo=linkedin&logoColor=EAF2FF&labelColor=081426" alt="LinkedIn"></a>
-  <a href="mailto:natim7520@gmail.com"><img src="https://img.shields.io/badge/Email-1976D2?style=for-the-badge&logo=gmail&logoColor=EAF2FF&labelColor=081426" alt="Email"></a>
-  <a href="https://robelbiruk.netlify.app"><img src="https://img.shields.io/badge/Dev.to-FF3340?style=for-the-badge&logo=dev.to&logoColor=EAF2FF&labelColor=081426" alt="Dev.to"></a>
-  <a href="https://x.com/ynwrobii"><img src="https://img.shields.io/badge/X-8B9BB4?style=for-the-badge&logo=x&logoColor=EAF2FF&labelColor=081426" alt="X/Twitter"></a>
-</p>
-
-<p align="center"><i>Open to collaborations, freelance work, and building things that make the neighborhood better.</i></p>
+<p align="center"><i>Add your social links in the generator to light up the network.</i></p>
 
 <p align="center">
   <i>Open to collaborations, consultations, and friendly neighborhood developer meetups.</i>
@@ -270,14 +264,14 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/robibiruk">
+  <a href="https://github.com/Robibiruk">
     <img src="assets/footer.svg" alt="The web never sleeps. Neither does the developer." width="100%">
   </a>
 </p>
 
 <!-- Visitor Counter (optional) -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=robibiruk&color=E62429&style=for-the-badge&label=SPIDER-SENSE+VISITORS&labelColor=081426" alt="Visitor Count">
+  <img src="https://komarev.com/ghpvc/?username=Robibiruk&color=E62429&style=for-the-badge&label=SPIDER-SENSE+VISITORS&labelColor=081426" alt="Visitor Count">
 </p>
 
 <p align="center">
@@ -291,7 +285,7 @@ tools/generate.py from your live GitHub data and refreshed by
 .github/workflows/refresh.yml (Mon & Thu, 06:17 UTC).
 
 To refresh manually:
-  python tools/generate.py --username robibiruk
+  python tools/generate.py --username Robibiruk
 
 Optional: set GITHUB_TOKEN in your environment before running to enable
 the real 52-week contribution calendar (the GraphQL endpoint needs a token).
