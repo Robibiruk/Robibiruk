@@ -20,7 +20,7 @@
 
 <p align="center">
   <a href="https://github.com/Robibiruk">
-    <img src="https://readme-typing-svg.demolab.com?font=Impact&weight=900&size=42&duration=3000&pause=1.5&color=E62429&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=100&lines=ROBEL+BIRUK;FULL-STACK+DEVELOPER+%E2%80%A2+AI+ENGINEER+%E2%80%A2+PHARMACY+STUDENT" alt="ROBEL BIRUK" />
+    <img src="https://readme-typing-svg.demolab.com?font=Impact&weight=900&size=42&duration=3000&pause=1.5&color=E62429&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=100&lines=ROBEL+BIRUK;" alt="ROBEL BIRUK" />
   </a>
 </p>
 
