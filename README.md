@@ -20,7 +20,7 @@
 
 <p align="center">
   <a href="https://github.com/Robibiruk">
-    <img src="https://readme-typing-svg.demolab.com?font=Impact&weight=900&size=42&duration=3000&pause=1.5&color=E62429&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=100&lines=ROBEL+BIRUK;" alt="ROBEL BIRUK" />
+    <img src="https://readme-typing-svg.demolab.com?font=Impact&weight=900&size=42&duration=3000&pause=1.5&color=E62429&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=100&lines=ROBEL+BIRUK;FULL-STACK+DEVELOPER+%E2%80%A2+AI+ENGINEER+%E2%80%A2+PHARMACY+STUDENT" alt="ROBEL BIRUK" />
   </a>
 </p>
 
@@ -62,7 +62,7 @@
 
 <p align="center">
   <a href="https://github.com/Robibiruk">
-    <img src="assets/hero-stats.svg" alt="Hero Stats — commits, PRs, streak, stars" width="100%">
+    <img src="https://spidey-stats.robekmedia-723.workers.dev/Robibiruk/hero-stats.svg" alt="Hero Stats — commits, PRs, streak, stars" width="100%">
   </a>
 </p>
 
@@ -218,7 +218,7 @@
 
 <p align="center">
   <a href="https://github.com/Robibiruk">
-    <img src="assets/achievements.svg" alt="Hero Achievements — Spider-Verse Comic Badges" width="100%">
+    <img src="https://spidey-stats.robekmedia-723.workers.dev/Robibiruk/achievements.svg" alt="Hero Achievements — Spider-Verse Comic Badges" width="100%">
   </a>
 </p>
 
@@ -250,7 +250,14 @@
   <img src="https://img.shields.io/badge/%F0%9F%93%A1+SPIDER-SENSE+NETWORK-1976D2?style=for-the-badge&labelColor=081426" alt="Spider-Sense Network">
 </p>
 
-<p align="center"><i>Add your social links in the generator to light up the network.</i></p>
+<p align="center">
+  <a href="https://www.linkedin.com/in/robel-biruk"><img src="https://img.shields.io/badge/LinkedIn-E62429?style=for-the-badge&logo=linkedin&logoColor=EAF2FF&labelColor=081426" alt="LinkedIn"></a>
+  <a href="mailto:natim7520@gmail.com"><img src="https://img.shields.io/badge/Email-1976D2?style=for-the-badge&logo=gmail&logoColor=EAF2FF&labelColor=081426" alt="Email"></a>
+  <a href="https://robelbiruk.tech/"><img src="https://img.shields.io/badge/Dev.to-FF3340?style=for-the-badge&logo=dev.to&logoColor=EAF2FF&labelColor=081426" alt="Dev.to"></a>
+  <a href="https://x.com/ynwrobii"><img src="https://img.shields.io/badge/X-8B9BB4?style=for-the-badge&logo=x&logoColor=EAF2FF&labelColor=081426" alt="X/Twitter"></a>
+</p>
+
+<p align="center"><i>Open to collaborations, freelance work, and building things that make the neighborhood better.</i></p>
 
 <p align="center">
   <i>Open to collaborations, consultations, and friendly neighborhood developer meetups.</i>
