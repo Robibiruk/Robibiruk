@@ -20,7 +20,7 @@
 
 <p align="center">
   <a href="https://github.com/Robibiruk">
-    <img src="https://readme-typing-svg.demolab.com?font=Impact&weight=900&size=42&duration=3000&pause=1.5&color=E62429&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=100&lines=ROBEL+BIRUK;PHARMACY+STUDENT+%C2%B7+FULL-STACK+DEVELOPER+%C2%B7+AI+ENGINEER" alt="ROBEL BIRUK" />
+    <img src="https://readme-typing-svg.demolab.com?font=Impact&weight=900&size=42&duration=3000&pause=1.5&color=E62429&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=100&lines=ROBEL+BIRUK;" alt="ROBEL BIRUK" />
   </a>
 </p>
 
@@ -128,7 +128,7 @@
   <tr>
     <td width="100%" valign="top">
       <h3>PulseWatch</h3>
-      <p>Self-hosted uptime monitoring with Telegram alerts, AI-explained incidents, and public status pages. FastAPI + React/Vite/TS.</p>
+      <p>Self-hosted uptime monitoring with Telegram alerts, AI-explained incidents, and public status pages. Built with FastAPI + React/Vite/TypeScript and deployed on an Azure Linux VM with a dedicated PostgreSQL database.</p>
       <p>
         <a href="https://github.com/Robibiruk/PulseWatch"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
         <a href="https://pulsewatch-monitor.vercel.app"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
@@ -152,7 +152,7 @@
   <tr>
     <td width="50%" valign="top">
       <h3>PulseWatch</h3>
-      <p>Self-hosted uptime monitoring with Telegram alerts, AI-explained incidents, and public status pages. FastAPI + React/Vite/TS.</p>
+      <p>Self-hosted uptime monitoring with Telegram alerts, AI-explained incidents, and public status pages. Built with FastAPI + React/Vite/TypeScript and deployed on an Azure Linux VM with a dedicated PostgreSQL database.</p>
       <p>
         <a href="https://github.com/Robibiruk/PulseWatch"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=EAF2FF&labelColor=081426" alt="GitHub"></a>
         <a href="https://pulsewatch-monitor.vercel.app"><img src="https://img.shields.io/badge/LIVE-2BD576?style=for-the-badge&labelColor=081426" alt="Live Demo"></a>
