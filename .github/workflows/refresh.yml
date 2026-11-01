@@ -1,10 +1,16 @@
-name: Refresh Spider-Man Assets
+name: Refresh Profile, Nexus & Yellow Contribution Calendar
 
 on:
   schedule:
-    # Every Monday and Thursday at 06:17 UTC
-    - cron: '17 6 * * 1,4'
+    - cron: '17 */6 * * *'
   workflow_dispatch:
+  push:
+    paths:
+      - 'readme.config.json'
+      - 'assets/og-image.jpg'
+      - 'themes/**'
+      - 'templates/**'
+      - 'tools/**'
 
 permissions:
   contents: write
@@ -19,19 +25,23 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Generate SVG assets
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python tools/generate.py --username ${{ github.repository_owner }}
+      - name: Install Pillow for live ASCII portrait rendering
+        run: pip install --quiet Pillow
 
-      - name: Commit and push if changed
+      - name: Generate SVG assets & README
+        env:
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python tools/generate.py --username "${{ github.repository_owner }}"
+
+      - name: Commit and push if updated
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/arsenal.svg assets/swing.svg assets/achievements.svg assets/hero-stats.svg assets/streak.svg
+          git add -A README.md assets/
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "No telemetry or visual changes to commit."
           else
-            git commit -m "🕸️ refresh spider assets [skip ci]"
+            git commit -m "⚡ refresh Contribution Calendar, Nexus & language icons [skip ci]"
             git push
           fi
