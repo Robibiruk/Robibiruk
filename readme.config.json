@@ -1,0 +1,48 @@
+{
+  "username": "Robibiruk",
+  "name": "ROBEL BIRUK",
+  "handle": "robel@observatory:~",
+  "role": "FULL-STACK ENGINEER · AI PRACTITIONER · SYSTEMS BUILDER",
+  "tagline": "Building intelligent tools at the intersection of code, health, and language.",
+  "location": "ADDIS ABABA, ETHIOPIA",
+  "website": "https://robelbiruk.tech",
+  "interactive_url": "https://robibiruk.github.io/",
+  "portrait_path": "assets/og-image.jpg",
+  "theme": "observatory",
+  "bio": "I design and ship AI-first products and resilient systems—moving between infrastructure and interface with a bias toward clarity, craft, and real-world utility.",
+  "intro_bullets": [
+    "Architecting local-first AI assistants, autonomous Telegram workflows, and developer telemetry tools.",
+    "Full-stack execution across Python (FastAPI), TypeScript/React, Three.js/WebGL, and PostgreSQL.",
+    "Obsessed with deterministic design, high-performance web deployment, and open-source craft."
+  ],
+  "template_repo": "https://github.com/Robibiruk/observatory-readme",
+  "missions": [
+    {"id": "001", "year": "2022", "title": "The First Line of Code", "status": "complete", "tags": ["HTML", "CSS", "JavaScript", "Git"]},
+    {"id": "002", "year": "2023", "title": "Full-Stack Foundations", "status": "complete", "tags": ["React", "Node.js", "Express", "MongoDB"]},
+    {"id": "003", "year": "2024", "title": "PLP Software Engineering", "status": "complete", "tags": ["MERN", "REST APIs", "Vite"]},
+    {"id": "004", "year": "2025", "title": "Entered the AI Frontier", "status": "complete", "tags": ["Python", "FastAPI", "OpenRouter"]},
+    {"id": "005", "year": "2026", "title": "Cloud & Infrastructure", "status": "complete", "tags": ["FastAPI", "PostgreSQL", "Docker"]},
+    {"id": "006", "year": "2026", "title": "Building Beyond the Stack", "status": "current", "tags": ["AI Systems", "WebGL", "Automation"]}
+  ],
+  "exhibits": [
+    {"name": "PulseWatch", "repo": "PulseWatch", "live": "https://pulsewatch-monitor.vercel.app/", "desc": "Self-hosted uptime monitoring with Telegram alerts, AI-explained incidents, and public status pages.", "stack": ["FastAPI", "React", "PostgreSQL"]},
+    {"name": "Nira AI", "repo": "Nira-AI-Assistant", "live": "https://nira-ai-assistant.vercel.app/", "desc": "A local-first assistant with voice replies and tools for browser, terminal, files, weather, and search.", "stack": ["Python", "FastAPI", "React"]},
+    {"name": "DevWrapped", "repo": "DevWrapped", "live": "https://devwrapped-app.vercel.app/", "desc": "A shareable annual story built from GitHub activity, stats, and developer archetypes.", "stack": ["TypeScript", "React", "GitHub API"]},
+    {"name": "RepoPages", "repo": "Repo-to-Landing-page", "live": "https://repo-to-landing-page.vercel.app/", "desc": "Turns a GitHub repository into a customizable, AI-generated product website.", "stack": ["TypeScript", "React", "AI"]},
+    {"name": "Clean City", "repo": "clean-city", "live": "https://clean-city-report.vercel.app/", "desc": "Community reporting for trash, pollution, and hazards on an interactive map.", "stack": ["React", "Node.js", "MongoDB"]},
+    {"name": "Atnasya Health", "repo": "atnasya-health-frontend", "live": "https://atnasya-health.netlify.app/", "desc": "Menstrual cycle tracking with predictions, symptom logs, and history analytics.", "stack": ["React", "TypeScript", "Netlify"]}
+  ],
+  "instruments": {
+    "Core Languages": ["Python", "TypeScript", "JavaScript", "SQL", "Bash", "HTML5", "CSS3", "PHP"],
+    "AI & LLM Models": ["PyTorch", "LangChain", "OpenRouter", "Hugging Face", "OpenCV", "Jupyter"],
+    "Backend Systems": ["FastAPI", "Node.js", "Express", "Django", "GraphQL"],
+    "Frontend & 3D": ["React", "Next.js", "Three.js", "Tailwind CSS", "Vite"],
+    "Data & Cloud Infra": ["PostgreSQL", "MongoDB", "Supabase", "Docker", "Linux", "GitHub Actions", "Cloudflare", "Vercel"]
+  },
+  "socials": {
+    "github": "https://github.com/Robibiruk",
+    "linkedin": "https://linkedin.com/in/robelbiruk",
+    "dev.to": "https://dev.to/robelbiruk",
+    "x": "https://twitter.com/robelbiruk"
+  }
+}

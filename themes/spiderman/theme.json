@@ -1,0 +1,30 @@
+{
+  "id": "spiderman",
+  "name": "Spider-Verse",
+  "description": "Original Spider-Verse-flavoured preset (no copyrighted assets). Same engine, different skin.",
+  "palette": {
+    "bg": "#05070D", "card": "#081426", "border": "#17365C",
+    "primary": "#E62429", "secondary": "#FF3340",
+    "ok": "#2BD576", "warn": "#FFB020", "info": "#1976D2",
+    "text": "#EAF2FF", "muted": "#8B9BB4"
+  },
+  "fonts": {
+    "display": "Impact,'Arial Black',sans-serif",
+    "mono": "'Cascadia Code',Consolas,monospace"
+  },
+  "labels": {
+    "cta": "ENTER THE WEB",
+    "mission": "MISSION", "complete": "MISSION CLEARED", "current": "CURRENT MISSION",
+    "live": "LIVE", "flight": "IN PROGRESS",
+    "missions_kicker": "ORIGIN STORY", "missions_title": "From bite to hero",
+    "exhibits_kicker": "WEB MISSIONS", "exhibits_title": "Cases solved",
+    "instruments_kicker": "WEB ARSENAL", "instruments_title": "Gadgets on the belt",
+    "telemetry_kicker": "HERO STATS", "telemetry_title": "Spider-sense readout",
+    "const_kicker": "WEB SWING", "const_title": "A year across the city",
+    "const_legend": "EACH NODE IS A DAY ON PATROL  ·  BRIGHTER = MORE ACTION  ·  WEBS CONNECT UNBROKEN STREAKS",
+    "streak": "WEB STREAK", "commits": "WEB SHOTS", "repos": "MISSIONS",
+    "stars": "CITIZENS SAVED", "best": "LONGEST STREAK", "followers": "ALLIES", "fuel": "WEB FLUID",
+    "footer_kicker": "THE WEB NEVER SLEEPS", "footer": "Neither does the developer.",
+    "footer_sub": "Your friendly neighborhood builder."
+  }
+}
