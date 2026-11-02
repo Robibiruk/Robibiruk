@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
 Glassmorphism × Yellow GitHub Contribution Calendar × Contribution Nexus Generator
-- assets/hero.svg          : Custom ASCII portrait from assets/og-image.jpg + System HUD
-- assets/exhibits.svg      : Project Showcase cards
+- assets/hero.svg          : Multi-Tone Color-Quantized ASCII portrait from assets/og-image.jpg + System HUD
+- assets/exhibits.svg      : Project Showcase cards with Stack Icons
 - assets/instruments.svg   : Categorized Language & AI Models Arsenal with Vector Brand Icons
 - assets/missions.svg      : Engineering Trajectory
 - assets/telemetry.svg     : Live Telemetry & Language Distribution with Vector Brand Icons
-- assets/nexus.svg         : Holographic 4-Axis Contribution Nexus (at the bottom section)
+- assets/nexus.svg         : Holographic 4-Axis Contribution Nexus (bottom section)
 - assets/contributions.svg : Exact GitHub Contribution Calendar structure in Yellow/Gold theme with animations
+- assets/footer.svg        : Glassmorphic Animated Wave × Yellow Telemetry Footer
 """
 from __future__ import annotations
 
@@ -20,7 +21,6 @@ import random
 import sys
 import textwrap
 import urllib.request
-from collections import deque
 from pathlib import Path
 
 from tech_icons import TECH_ICONS, render_icon
@@ -28,45 +28,61 @@ from tech_icons import TECH_ICONS, render_icon
 ROOT = Path(__file__).resolve().parent.parent
 API = "https://api.github.com"
 GQL = "https://api.github.com/graphql"
-PALETTE_ASCII = " .,:-~=+*#%@"
+PALETTE_ASCII = " .,:;~=+*#%@"
 
-FALLBACK_PORTRAIT = [
-    "                     .   ..,:;~~==++*#%@@@%#*+=~:.              ",
-    "                   .,:;~=+*#%%@@@@@@@@@@@@@@@@@@@%#*=:.         ",
-    "                 .:~+*#%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%+,.      ",
-    "                :;*#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#;.     ",
-    "               ~#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@+     ",
-    "              *@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*    ",
-    "             +@@@@@@@@@@@@@@@@@#**++====++**#%@@@@@@@@@@@@@@~   ",
-    "            .@@@@@@@@@@@@@#+=~::,,........,,::;~+*#@@@@@@@@@#   ",
-    "            ;@@@@@@@@@@#+~:,....,,::;;;;;;::,,....,=*@@@@@@@@,  ",
-    "            +@@@@@@@@@*:,..,::;~~===++++++===~~;:,..:*@@@@@@@:  ",
-    "            *@@@@@@@@+...,:;~==++++++++++++++++==~;:.,+@@@@@@:  ",
-    "            #@@@@@@@@:.,:;~==+++**************+++==~;,,#@@@@@   ",
-    "            %@@@@@@@%..:;~=++*#%@@@@@%##*+*#%@@@@@#*=;,*@@@@#   ",
-    "            @@@@@@@@#.,;~=++#@@@%*++*#%@%++%@#**+#@@@*;;@@@@+   ",
-    "            ~@@@@@@@#.:;~=+*@#=:..:*@@*:=@@+..:+#@*+#@+;@@@#    ",
-    "             %@@@@@@%.:;~==++~..:;~==+~.:@@~..;~===~+*~*@@@:    ",
-    "             .@@@@@@@,.:;~===~~~===+++~.:@@+.:~===++===#@@~     ",
-    "              :@@@@@@~.,:;~~======+++*~.:@@*.:~====~~~*@@+      ",
-    "               ;@@@@@#..,:;~~~====++*#;.:@@#;:;~~~~~~=@@#       ",
-    "                ~@@@@@*..,:;~~~===+*#%@@@%#@@#+=~~~~*@@@.       ",
-    "                 ;@@@@@+..,:;~~==+*#%*=~:;~+#@%+=~~+@@@:        ",
-    "                  ~@@@@@*..,:;~~=+*#+~===++~:*#+=~*@@@~         ",
-    "              .,:~+*@@@@@#:.,:;~~=+*#%@@@@%#*+=~~#@@@*          ",
-    "          .,;~+*#%#*=*@@@@@*:,:;~~==++*****++=~+#@@@@#%#*+~:.   ",
-    "       .:~*#@@@@@%*+=~+@@@@@@#+~;;;~~~====~~~=*#@@@@@%*#%@@@@#+:",
-    "     .;*#@@@@@@%*+==~~~*@@@@@@@%#*+===~~~~==+#@@@@@@@#+=+*#%@@@@",
-    "    :#@@@@@@@@%*+===~~~;+@@@@@@@@@@@#*++++*#@@@@@#@@@@%*++++*#@@",
-    "   *@@@@@@@@@@@#*+==~~~::*@@@@@@@@@@@@@%%@@@@@@@*;#@@@@@#*++*#@@",
-    "  #@@@@@@@@@@@@@%*+=~~~:.:#@@@@@@@@@@@@@@@@@@@@#:,~%@@@@@@###@@@",
-    " +@@@@@@@@@@@@@@@%*+=~~:..;@@@@@@@@@@@@@@@@@@@#,...+@@@@@@@@@@@@",
-    ".@@@@@@@@@@@@@@@@@@#*+~:,..*@@@@@@@@@@@@@@@@@%:...,,*@@@@@@@@@@@",
-    "#@@@@@@@@@@@@@@@@@@@@#*;:,.:#@@@@@@@@@@@@@@@#;..:;%@@@@@@@@@@@@@",
-    "@@@@@@@@@@@@@@@@@@@@@@@*;:,,~@@@@@@@@@@@@@@%+. .;#@@%#@@@@@@@@@@",
-    "@@@@@@@@@@@@@@@@@@@@@@@@%+;::+@@@@@@@@@@@@@*...,*@@@#*%@@@@@@@@@",
-    "@@@@@@@@@@@@@@@@@@@@@@@@@@#*++@@@@@@@@@@@@@+..:+@@@@@%%@@@@@@@@@",
-    "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#**#@@@@@@@@@@@@@@@@@"
+# 6-tone palette for the multi-shade ASCII portrait in hero.svg:
+# 0: Deep Indigo-Blue (hair/jacket shadow)
+# 1: Electric Blue (hair curls & jacket folds)
+# 2: Cyan-Ice (watch face, metallic strap & eye catchlights)
+# 3: Warm Bronze-Gold (skin & camo hood shadows)
+# 4: Cyber Yellow (skin midtones)
+# 5: Luminous Pale Gold (forehead, nose bridge, hand & lip highlights)
+PORTRAIT_COLORS = ["#1d4ed8", "#3b82f6", "#38bdf8", "#ca8a04", "#facc15", "#fef08a"]
+
+# Pre-computed 68x42 (chars, color_indices) matrix from assets/og-image.jpg
+FALLBACK_PORTRAIT_COLOR = [
+    ("                                                                    ", "00000000000000000000000000000000000000000000000000000000000000000000"),
+    ("                               @@@*=+                               ", "00000000000000000000000000000001111110000000000000000000000000000000"),
+    ("                           @@@@@@ @%%##                             ", "00000000000000000000000000011111101111100000000000000000000000000000"),
+    ("                        @@@@@@@###......*%@@                        ", "00000000000000000000000011111111111111111111000000000000000000000000"),
+    ("                       @@@@@@*:..............                       ", "00000000000000000000000111111111111111111111100000000000000000000000"),
+    ("                      %*@@@@....,,,,,,,,,.....                      ", "00000000000000000000001111111111111111111111110000000000000000000000"),
+    ("                     @@@@@+....,,.,............                     ", "00000000000000000000011111111113333333331111111000000000000000000000"),
+    ("                    *@@%#.......,:;;;~===**~....                    ", "00000000000000000000111111103333344444555543111100000000000000000000"),
+    ("                   **#%%....;;~~==++=====*#@*....                   ", "00000000000000000001111100033444445555555555411110000000000000000000"),
+    ("                   .* @@...=+~~======+++++*%@%...                   ", "00000000000000000001111100034444455555555554311110000000000000000000"),
+    ("                   .*%@@...*=~==++++==~;:,:*@@#..                   ", "00000000000000000001111100044445555544433333111110000000000000000000"),
+    ("                   .*#%%%..*=~;:;~===;:,::=:*@#+.                   ", "00000000000000000001111110044322334443322344411110000000000000000000"),
+    ("                   ..#%%%%........;+%*;,:.**=%@ ~                   ", "00000000000000000000111111033322334454432345531030000000000000000000"),
+    ("                   .. %##%@...;.,,;=#@%+=~=+#@  *                   ", "00000000000000000000101111133333334455544445540040000000000000000000"),
+    ("                   ..*%##%@#.~;:~==++@@@**++*%@ *                   ", "00000000000000000000011111113433444455555555544040000000000000000000"),
+    ("                    ** ###%~.*=+++=;~*=**+*++*@                     ", "00000000000000000000110111144444444345455555544000000000000000000000"),
+    ("                   *+*  ###@=:~~=+~.:;~***%@##%                     ", "00000000000000000001110011114444444333445555544000000000000000000000"),
+    ("                *##**+#%%%%@@=,,~+=~;;~=*~;@@%% *++                 ", "00000000000000001111111333333443444333444445554011100000000000000000"),
+    ("              ****#**+*%%##%%%%.;=::~~~=*+=*%#%#.+++                ", "00000000000000111111133333333333443333344445554211110000000000000000"),
+    ("              *******++#@@@@@%@@.,,;::::~*%@#*##****                ", "00000000000000333333333444444443333333334555422211110000000000000000"),
+    ("              *+**######@#*.......,,===~~+***;#@##*# ***            ", "00000000000000333344444443300000000334444555455522201110000000000000"),
+    ("           *  **##%@+++:..:~......,,...,~~~~+++@@@..%               ", "00000000000100334445444330330000001100034444555552201000000000000000"),
+    ("               ##..:,::.,,,:..,,,.,,,.=##**%%%%#@@*..               ", "00000000000000033003333000110000000100444445555552200000000000000000"),
+    ("             *....=*........,,,,,;,,.+#+*==+%%##%%@.= @             ", "00000000000001000044000000000000130004444445555552222020000000000000"),
+    ("            ..==%@*;.~=+++:,.,,,,,;;~=,+*+++=*###%@#.#*#            ", "00000000000003445544044444110000013333344444455555222222000000000000"),
+    ("           ...~#*@#%@@%%#@#....,,,,.,,;=..+#***##%% *.....          ", "00000000000000344545555555400000000000330044455552222000000000000000"),
+    ("         ..........,==~~~:;+;...,,,,,,,,...+*+***%@@@ ......        ", "00000000000000111003444433430000000100000044452222222010000000000000"),
+    ("      *....,,,,,,,....,=~~%@%@,..,,,,,,,,,,..=+**+=%@@@ ....,,      ", "00000010000011100000001333555500000000000100044222222220000011000000"),
+    ("     .....,,,,,,,,,,,....,=*@@@..,,,,,,,,,,,..;;:;~~;+@@   #...     ", "00000011000111000010000001445550000000001000003322222222000100000000"),
+    ("    .,,,.,,,,,,,,,,,,,,...,@%;*@..,,,,,::,.,,..,:=+~;,:#%#  ,...    ", "00000010001011001000111000145445000000011000000112222222210010000000"),
+    ("   .,,,,,,,,,,,,,,,,,,,,,....,#@...,,,,,,,,,.,,::.,===**#@## ....   ", "00001100011010011000100010000145000000011000000110144455222100000000"),
+    ("  ,,,,,,,,,,:,,,,,,,,,,,,,,...:@@..,,,,,,,,,,,,...:,~...%@%#,...,,  ", "00000010001110001000100100000012200000010000110000113000522210000000"),
+    ("  ,,,,,,,.,,,,,,,,,,,,,,,,,,,..,@;..,,,,,,.,:,,,.,..,,.......,,,.,  ", "00000010000111000100001000010001210001101001100100000000000000100000"),
+    (" ,,,..,,,,,,,,,,,,,,,,,,,,,,,,...;..,,,,,,,,,,,,::..,,,,,,,,:,::,.. ", "00000001100111100000011000000000010000000001011011000100000111111000"),
+    (" ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,::,,.,:,,,,,,,,,,......., ", "01110000110011110000110000010000000000000011100010001100000000000000"),
+    (" :,,,,,,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:,,..,:,,,,,,,,,,,,,,,,,,, ", "01100110010011110001100100011100101000000110000100001000010110000110"),
+    (" ,:,.,,,,,,.,:,,,,,,,,,,,,,,,,,,,,,,,,,,:,..,::,,,,,,,,,,,,,,,,,:,, ", "00100000001001110000100010011000001100011000011100000100111111111110"),
+    ("  ,::,,,,,,..,,,,,,,,,,,,,,,,,,,,,,,,.,::,.,::,,,,,,,,,,,,,,,,,,,,  ", "00011000010001111000011100011000000100011000111100000111001101000000"),
+    ("  ,.,:,,,,;;,,,,,,,,,,,,,,,,,,,,,,,,.,::,.,:,,,,,,,,,,,,,,,,,,,,,,  ", "00001100001100101100000100010000011100110001111000001000110000000000"),
+    ("  ,,,,::,.,.,,,,,,,,,,,,,,,,,,,,,,,,.,:,.,:,,,,,,,,,,,,,,,,,,,,,,,  ", "00000011000000001100000000000000000101100011110000011000000111111100"),
+    ("   ,,,,,,,;,,,,,,,,,,,,,,,,,,,,,,,:,,,,.,:,,,,,,,,,,,,,,,,,,,,,,,   ", "00010000111011000101100010100000001001001111100100011000001100000000"),
+    ("    ,,,,,,.,:,,,,,,,,,,,,,,,,,,,,,,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,    ", "00001000000011100111000011100011110000011111000100111000000000000000"),
 ]
 
 
@@ -100,85 +116,76 @@ def http(url: str, token: str | None = None, body: dict | None = None) -> dict |
         return json.loads(r.read().decode("utf-8"))
 
 
-def generate_portrait_ascii(img_path: Path, width: int = 64, height: int = 36) -> list[str]:
+def generate_portrait_ascii_color(img_path: Path, width: int = 68, height: int = 42) -> list[tuple[str, str]]:
+    """
+    Convert assets/og-image.jpg into a 68x42 (chars_row, color_idx_row) list
+    with local contrast enhancement so facial features, hand, watch, and jacket pop.
+    """
     if not img_path.exists():
-        return FALLBACK_PORTRAIT
+        return FALLBACK_PORTRAIT_COLOR
     try:
         from PIL import Image, ImageFilter
 
         img = Image.open(img_path).convert("RGB")
         w0, h0 = img.size
-        crop = img.crop((int(w0 * 0.20), int(h0 * 0.16), int(w0 * 0.84), int(h0 * 0.70)))
-        small = crop.resize((width, height), Image.Resampling.LANCZOS)
-        edges = small.convert("L").filter(ImageFilter.FIND_EDGES)
+        # Tight portrait crop on head, hand-on-chin, watch, and upper chest
+        crop = img.crop((int(w0 * 0.24), int(h0 * 0.17), int(w0 * 0.80), int(h0 * 0.67)))
+        small_rgb = crop.resize((width, height), Image.Resampling.LANCZOS)
+        gray_img = crop.convert("L")
+        blur_img = gray_img.filter(ImageFilter.GaussianBlur(radius=14))
+        small_g = gray_img.resize((width, height), Image.Resampling.LANCZOS)
+        small_b = blur_img.resize((width, height), Image.Resampling.LANCZOS)
 
-        px_rgb = small.load()
-        px_ed = edges.load()
+        px_rgb = small_rgb.load()
+        px_g = small_g.load()
+        px_b = small_b.load()
 
-        bg_mask = [[False] * width for _ in range(height)]
-        q: deque[tuple[int, int]] = deque()
-
-        def is_bg(r: int, c: int) -> bool:
-            R, G, B = px_rgb[c, r]
-            lum = 0.299 * R + 0.587 * G + 0.114 * B
-            warmth = R - B
-            ny, nx = r / max(1, height - 1), c / max(1, width - 1)
-            in_head = (0.08 <= ny <= 0.55 and 0.30 <= nx <= 0.68)
-            in_torso = (ny > 0.52 and 0.12 <= nx <= 0.88)
-            if in_head and (lum < 102 or warmth > 24 or (0.16 <= ny <= 0.50 and 0.36 <= nx <= 0.62)):
-                return False
-            if in_torso and (lum < 112 or warmth > 20 or (0.20 <= nx <= 0.80 and lum < 140)):
-                return False
-            return lum > 105 and warmth < 32
-
-        for c in range(width):
-            if is_bg(0, c):
-                bg_mask[0][c] = True
-                q.append((0, c))
+        out: list[tuple[str, str]] = []
         for r in range(height):
-            for c in (0, width - 1):
-                if not bg_mask[r][c] and is_bg(r, c):
-                    bg_mask[r][c] = True
-                    q.append((r, c))
-
-        while q:
-            r, c = q.popleft()
-            for dr, dc in ((-1, 0), (1, 0), (0, -1), (0, 1)):
-                nr, nc = r + dr, c + dc
-                if 0 <= nr < height and 0 <= nc < width and not bg_mask[nr][nc]:
-                    if is_bg(nr, nc):
-                        bg_mask[nr][nc] = True
-                        q.append((nr, nc))
-
-        rows = []
-        for r in range(height):
-            line = []
+            ny = r / max(1, height - 1)
+            chars = []
+            cols = []
             for c in range(width):
-                if bg_mask[r][c]:
-                    line.append("." if (c * 23 + r * 41) % 127 == 0 else " ")
-                    continue
+                nx = c / max(1, width - 1)
                 R, G, B = px_rgb[c, r]
-                lum = (0.299 * R + 0.587 * G + 0.114 * B) / 255.0
-                warmth = max(0.0, (R - B) / 255.0)
-                ed = px_ed[c, r] / 255.0
+                lum = px_g[c, r] / 255.0
+                lc = (px_g[c, r] - px_b[c, r]) / 255.0
+                warmth = (R - B) / 255.0
+
+                d_head = ((nx - 0.50) / 0.23) ** 2 + ((ny - 0.27) / 0.25) ** 2
+                d_neck = ((nx - 0.50) / 0.34) ** 2 + ((ny - 0.54) / 0.20) ** 2
+                d_torso = ((nx - 0.50) / 0.49) ** 2 + ((ny - 0.85) / 0.36) ** 2
+                d_env = min(d_head, d_neck, d_torso)
+
+                is_fg = (d_env <= 1.0) and not (d_env > 0.68 and lum > 0.58 and warmth < 0.09)
+                if not is_fg:
+                    chars.append(" ")
+                    cols.append("0")
+                    continue
+
                 if warmth > 0.09:
-                    val = 0.32 + (lum - 0.18) * 1.35 + warmth * 0.42 + ed * 0.18
+                    tone = 0.55 + (lum - 0.38) * 1.65 + lc * 2.4
+                    c_idx = 5 if lum > 0.48 else (4 if lum > 0.36 else 3)
+                elif lum > 0.44:
+                    tone = 0.82 + lc * 1.5
+                    c_idx = 2
                 else:
-                    val = 0.18 + lum * 0.82 + ed * 0.42
-                idx = max(1, min(len(PALETTE_ASCII) - 1, int(val * (len(PALETTE_ASCII) - 1))))
-                line.append(PALETTE_ASCII[idx])
-            rows.append("".join(line))
-        return rows
+                    tone = 0.28 + lc * 1.8 + (0.25 - lum) * 0.35
+                    c_idx = 1 if lc > 0.005 else 0
+
+                idx = max(1, min(len(PALETTE_ASCII) - 1, int(tone * (len(PALETTE_ASCII) - 1))))
+                chars.append(PALETTE_ASCII[idx])
+                cols.append(str(c_idx))
+            out.append(("".join(chars), "".join(cols)))
+        return out
     except Exception as exc:
-        print(f"[info] Pillow portrait conversion skipped ({exc}); using embedded portrait matrix.", file=sys.stderr)
-        return FALLBACK_PORTRAIT
+        print(f"[info] Using embedded color portrait matrix ({exc})", file=sys.stderr)
+        return FALLBACK_PORTRAIT_COLOR
 
 
 def demo_weeks_days(username: str) -> list[list[tuple[str, int]]]:
-    """Generate 52 weeks of 7 days (Sun..Sat) ending this week, matching GitHub's calendar layout."""
     rng = random.Random(sum(ord(ch) for ch in username))
     today = datetime.date.today()
-    # Align start to Sunday 52 weeks ago
     days_since_sun = (today.weekday() + 1) % 7
     end_sun = today - datetime.timedelta(days=days_since_sun)
     start_sun = end_sun - datetime.timedelta(weeks=51)
@@ -190,7 +197,6 @@ def demo_weeks_days(username: str) -> list[list[tuple[str, int]]]:
             if cur_d > today:
                 cnt = 0
             else:
-                # Higher activity in recent months to look realistic like the screenshot
                 boost = 1.35 if w > 28 else 0.85
                 cnt = 0 if rng.random() < (0.42 / boost) else max(1, int(rng.gauss(3.8 * boost, 2.8)))
             wk.append((cur_d.isoformat(), cnt))
@@ -438,11 +444,11 @@ def head(T: dict, kicker: str, title: str, tag: str, y: int = 44) -> str:
     )
 
 
-# ------------------------------------------------------------------ 1. HERO (ASCII Portrait + Glass HUD)
+# ------------------------------------------------------------------ 1. HERO (Multi-Tone Color ASCII Portrait + Glass HUD)
 def render_hero(cfg: dict, T: dict, data: dict) -> str:
     c, f, L = T["palette"], T["fonts"], T["labels"]
     W, H = 1000, 460
-    portrait_rows = generate_portrait_ascii(ROOT / cfg.get("portrait_path", "assets/og-image.jpg"), 64, 36)
+    portrait_matrix = generate_portrait_ascii_color(ROOT / cfg.get("portrait_path", "assets/og-image.jpg"), 68, 42)
     cur_streak, best_streak, _ = streaks(data["days"])
     score, grade, rank_title = calc_grade(data)
 
@@ -453,29 +459,52 @@ def render_hero(cfg: dict, T: dict, data: dict) -> str:
         f'<stop offset="0" stop-color="{c["yellow"]}" stop-opacity="0"/>'
         f'<stop offset="0.5" stop-color="{c["yellow"]}" stop-opacity="0.22"/>'
         f'<stop offset="1" stop-color="{c["primary"]}" stop-opacity="0"/></linearGradient>'
-        '<clipPath id="portraitClip"><rect x="36" y="64" width="416" height="360" rx="12"/></clipPath>'
+        f'<radialGradient id="portraitHalo" cx="0.5" cy="0.45" r="0.55">'
+        f'<stop offset="0" stop-color="{c["primary"]}" stop-opacity="0.24"/>'
+        f'<stop offset="0.6" stop-color="{c["yellow"]}" stop-opacity="0.08"/>'
+        f'<stop offset="1" stop-color="{c["bg"]}" stop-opacity="0"/></radialGradient>'
+        '<clipPath id="portraitClip"><rect x="36" y="66" width="416" height="358" rx="12"/></clipPath>'
     )
 
-    ascii_tspans = []
-    for idx, row in enumerate(portrait_rows):
-        y_pos = 92 + idx * 9.2
-        row_color = c["yellow"] if idx in (12, 13, 14) else (c["info"] if idx > 26 else c["text"])
-        ascii_tspans.append(f'<tspan x="48" y="{y_pos:.1f}" fill="{row_color}">{esc(row)}</tspan>')
+    # Build run-length encoded color <tspan> elements for each of the 42 portrait rows
+    ascii_rows_svg = []
+    for r_idx, (ch_str, col_str) in enumerate(portrait_matrix):
+        y_pos = 82.0 + r_idx * 7.4
+        runs = []
+        cur_col = col_str[0] if col_str else "0"
+        cur_chars = []
+        for ch, c_code in zip(ch_str, col_str):
+            if c_code == cur_col:
+                cur_chars.append(ch)
+            else:
+                runs.append((cur_col, "".join(cur_chars)))
+                cur_col = c_code
+                cur_chars = [ch]
+        if cur_chars:
+            runs.append((cur_col, "".join(cur_chars)))
+
+        row_tspans = []
+        for j, (c_code, seg) in enumerate(runs):
+            hex_c = PORTRAIT_COLORS[int(c_code) % len(PORTRAIT_COLORS)]
+            pos_attr = f' x="54" y="{y_pos:.1f}"' if j == 0 else ""
+            row_tspans.append(f'<tspan{pos_attr} fill="{hex_c}">{esc(seg)}</tspan>')
+        ascii_rows_svg.append("".join(row_tspans))
 
     portrait_panel = (
-        f'{glass_panel(36, 40, 416, 384, rx=14, border_col=c["yellow"], border_op=0.5, fill_op=0.68)}'
-        f'<rect x="37" y="41" width="414" height="26" rx="13" fill="#0f1b33" fill-opacity="0.85"/>'
+        f'{glass_panel(36, 40, 416, 384, rx=14, border_col=c["yellow"], border_op=0.55, fill_op=0.72)}'
+        f'<rect x="37" y="41" width="414" height="26" rx="13" fill="#0f1b33" fill-opacity="0.9"/>'
         f'<circle cx="54" cy="54" r="4" fill="#ff5f56"/><circle cx="68" cy="54" r="4" fill="#ffbd2e"/><circle cx="82" cy="54" r="4" fill="#27c93f"/>'
         f'<text x="102" y="58" font-family="{f["mono"]}" font-size="9.5" letter-spacing="1.5" fill="{c["muted"]}">PORTRAIT // ASSETS/OG-IMAGE.JPG</text>'
-        f'<text x="438" y="58" text-anchor="end" font-family="{f["mono"]}" font-size="9" font-weight="600" fill="{c["yellow"]}">ASCII·64x36</text>'
+        f'<text x="438" y="58" text-anchor="end" font-family="{f["mono"]}" font-size="9" font-weight="700" fill="{c["yellow"]}">ASCII·68x42</text>'
         f'<g clip-path="url(#portraitClip)">'
-        f'<text font-family="{f["mono"]}" font-size="8.4" xml:space="preserve" opacity="0.94">{"".join(ascii_tspans)}</text>'
-        f'<rect x="36" y="64" width="416" height="34" fill="url(#scanGrad)">'
-        f'<animate attributeName="y" values="64;390;64" dur="6.5s" repeatCount="indefinite"/></rect>'
+        f'<circle cx="244" cy="235" r="165" fill="url(#portraitHalo)"/>'
+        f'<text font-family="{f["mono"]}" font-size="7.6" font-weight="700" xml:space="preserve">{"".join(ascii_rows_svg)}</text>'
+        f'<rect x="36" y="66" width="416" height="32" fill="url(#scanGrad)">'
+        f'<animate attributeName="y" values="66;392;66" dur="6.5s" repeatCount="indefinite"/></rect>'
         f'</g>'
-        f'{glass_panel(48, 396, 392, 20, rx=6, border_col=c["yellow"], border_op=0.4, fill_op=0.75)}'
-        f'<text x="58" y="409" font-family="{f["mono"]}" font-size="8.5" letter-spacing="1.5" fill="{c["yellow"]}">BIOMETRIC ASCII RENDER // ACTIVE</text>'
-        f'<text x="430" y="409" text-anchor="end" font-family="{f["mono"]}" font-size="8.5" fill="{c["ok"]}">● SYNCED</text>'
+        f'{glass_panel(48, 396, 392, 20, rx=6, border_col=c["yellow"], border_op=0.45, fill_op=0.82)}'
+        f'<text x="58" y="409" font-family="{f["mono"]}" font-size="8.5" font-weight="600" letter-spacing="1.5" fill="{c["yellow"]}">BIOMETRIC ASCII RENDER // ACTIVE</text>'
+        f'<text x="430" y="409" text-anchor="end" font-family="{f["mono"]}" font-size="8.5" font-weight="700" fill="{c["ok"]}">● 100% LOCK</text>'
     )
 
     live_badge = "LIVE PAT TELEMETRY" if data["real"] else "SYNTHETIC TELEMETRY"
@@ -496,7 +525,7 @@ def render_hero(cfg: dict, T: dict, data: dict) -> str:
         cx = 484 + (i % 2) * 244
         cy = 262 + (i // 2) * 58
         cards_svg += (
-            f'{glass_panel(cx, cy, 232, 48, rx=10, border_col=col, border_op=0.5, fill_op=0.55)}'
+            f'{glass_panel(cx, cy, 232, 48, rx=10, border_col=col, border_op=0.55, fill_op=0.60)}'
             f'<rect x="{cx}" y="{cy}" width="3.5" height="48" rx="1.7" fill="{col}"/>'
             f'<text x="{cx + 15}" y="{cy + 18}" font-family="{f["mono"]}" font-size="8.5" letter-spacing="1.5" fill="{c["muted"]}">{esc(k_label)}</text>'
             f'<text x="{cx + 15}" y="{cy + 38}" font-family="{f["display"]}" font-size="16" font-weight="700" fill="{c["text"]}">{esc(val)}</text>'
@@ -505,7 +534,7 @@ def render_hero(cfg: dict, T: dict, data: dict) -> str:
     right_panel = (
         f'<circle cx="492" cy="56" r="4" fill="{c["yellow"]}">'
         f'<animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/></circle>'
-        f'<text x="504" y="60" font-family="{f["mono"]}" font-size="10" letter-spacing="2.5" fill="{c["yellow"]}">{esc(live_badge)}  ·  {esc(cfg["location"])}</text>'
+        f'<text x="504" y="60" font-family="{f["mono"]}" font-size="10" font-weight="600" letter-spacing="2.5" fill="{c["yellow"]}">{esc(live_badge)}  ·  {esc(cfg["location"])}</text>'
         f'<text x="484" y="120" font-family="{f["display"]}" font-size="54" font-weight="700" letter-spacing="1" fill="{c["text"]}">{esc(cfg["name"])}</text>'
         f'<rect x="484" y="136" width="476" height="2.5" rx="1.2" fill="url(#goldBlueGrad)"/>'
         f'<text x="484" y="162" font-family="{f["mono"]}" font-size="11.5" font-weight="600" letter-spacing="2" fill="{c["yellow"]}">{esc(cfg.get("role", "FULL-STACK & AI ENGINEER"))}</text>'
@@ -704,7 +733,7 @@ def render_telemetry(cfg: dict, T: dict, data: dict) -> str:
     return frame(W, H, body, "Live Telemetry & Language Models", T, "", 28, 13)
 
 
-# ------------------------------------------------------------------ 6. CONTRIBUTION NEXUS (Placed near bottom right before Calendar)
+# ------------------------------------------------------------------ 6. CONTRIBUTION NEXUS
 def render_nexus(cfg: dict, T: dict, data: dict) -> str:
     c, f, L = T["palette"], T["fonts"], T["labels"]
     W, H = 1000, 520
@@ -716,11 +745,11 @@ def render_nexus(cfg: dict, T: dict, data: dict) -> str:
     i_cnt = data.get("issues", 0)
     total_c = data.get("total_contribs", 701)
 
-    col_commits = "#3b82f6"   # Dominant Electric Blue
-    col_prs = "#8b5cf6"       # Violet
-    col_reviews = "#06b6d4"   # Cyan
-    col_issues = "#6366f1"    # Indigo
-    col_yellow = c["yellow"]  # Luminous Yellow (#facc15)
+    col_commits = "#3b82f6"
+    col_prs = "#8b5cf6"
+    col_reviews = "#06b6d4"
+    col_issues = "#6366f1"
+    col_yellow = c["yellow"]
 
     defs = (
         f'<radialGradient id="nexusCoreGlow" cx="0.5" cy="0.5" r="0.5">'
@@ -759,7 +788,6 @@ def render_nexus(cfg: dict, T: dict, data: dict) -> str:
         f'</g>'
     )
 
-    # 1) LEFT BEAM: COMMITS (94%)
     path_left = f"M {cx - 56},{cy} L 266,{cy}"
     path_left_curve1 = f"M {cx - 52},{cy - 10} Q 370,{cy - 34} 266,{cy - 6}"
     path_left_curve2 = f"M {cx - 52},{cy + 10} Q 370,{cy + 34} 266,{cy + 6}"
@@ -782,7 +810,6 @@ def render_nexus(cfg: dict, T: dict, data: dict) -> str:
         f'<animateMotion dur="1.6s" begin="1.3s" repeatCount="indefinite" path="{path_left_curve2}"/></circle>'
     )
 
-    # 2) BOTTOM BEAM: PULL REQUESTS (5%)
     path_bottom = f"M {cx},{cy + 56} L {cx},414"
     body += (
         f'<path d="{path_bottom}" fill="none" stroke="{col_prs}" stroke-width="7" stroke-opacity="0.12" stroke-linecap="round"/>'
@@ -793,7 +820,6 @@ def render_nexus(cfg: dict, T: dict, data: dict) -> str:
         f'<animateMotion dur="2.4s" begin="0.5s" repeatCount="indefinite" path="{path_bottom}"/></circle>'
     )
 
-    # 3) TOP BEAM: CODE REVIEWS (1%)
     path_top = f"M {cx},{cy - 56} L {cx},170"
     body += (
         f'<path d="{path_top}" fill="none" stroke="url(#beamTop)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100">'
@@ -803,7 +829,6 @@ def render_nexus(cfg: dict, T: dict, data: dict) -> str:
         f'<animateMotion dur="3.2s" begin="0.7s" repeatCount="indefinite" path="{path_top}"/></circle>'
     )
 
-    # 4) RIGHT BEAM: ISSUES
     path_right = f"M {cx + 56},{cy} L 734,{cy}"
     body += (
         f'<path d="{path_right}" fill="none" stroke="url(#beamRight)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" opacity="0">'
@@ -813,7 +838,6 @@ def render_nexus(cfg: dict, T: dict, data: dict) -> str:
         f'<animateMotion dur="3.8s" begin="0.9s" repeatCount="indefinite" path="{path_right}"/></circle>'
     )
 
-    # CENTRAL HOLOGRAPHIC REACTOR CORE
     body += (
         f'<g>'
         f'<circle cx="{cx}" cy="{cy}" r="62" fill="{col_commits}" fill-opacity="0.12">'
@@ -827,7 +851,6 @@ def render_nexus(cfg: dict, T: dict, data: dict) -> str:
         f'</g>'
     )
 
-    # Floating Glass Cards
     body += (
         f'<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.35s" fill="freeze"/>'
         f'{glass_panel(56, cy - 44, 198, 88, rx=12, border_col=col_commits, border_op=0.85, fill_op=0.72, top_glow=col_commits)}'
@@ -874,16 +897,8 @@ def render_nexus(cfg: dict, T: dict, data: dict) -> str:
     return frame(W, H, body, "Contribution Nexus — Holographic Activity Scanner", T, defs, 42, 19)
 
 
-# ------------------------------------------------------------------ 7. GITHUB CONTRIBUTION CALENDAR IN YELLOW THEME (Replaces Constellation)
+# ------------------------------------------------------------------ 7. GITHUB CONTRIBUTION CALENDAR IN YELLOW THEME
 def render_contributions(cfg: dict, T: dict, data: dict) -> str:
-    """
-    Exact GitHub Contribution Calendar layout (from user's reference image) upgraded with:
-    - Yellow/Gold heatmap palette (#111827 -> #422006 -> #854d0e -> #eab308 -> #facc15/#fef08a)
-    - Header: "<N> contributions in the last year" + compact streak & active-day badges
-    - Inner rounded calendar border with Jan..Dec month labels and Mon / Wed / Fri row labels
-    - Bottom-left: "Learn how we count contributions" + Bottom-right: "Less [5 yellow squares] More"
-    - Subtle golden scanline sweep + animated wave glow along the bottom
-    """
     c, f, L = T["palette"], T["fonts"], T["labels"]
     W, H = 1000, 340
     weeks = data.get("weeks", demo_weeks_days(cfg["username"]))[-52:]
@@ -902,13 +917,11 @@ def render_contributions(cfg: dict, T: dict, data: dict) -> str:
         '<clipPath id="calClip"><rect x="38" y="82" width="924" height="226" rx="12"/></clipPath>'
     )
 
-    # Top Headline matching GitHub's native header: "701 contributions in the last year"
     body = (
         f'<circle cx="46" cy="48" r="4" fill="{c["yellow"]}">'
         f'<animate attributeName="opacity" values="1;0.25;1" dur="2s" repeatCount="indefinite"/></circle>'
         f'<text x="60" y="55" font-family="{f["display"]}" font-size="22" font-weight="600" fill="{c["text"]}">'
         f'{total_c:,} contributions in the last year</text>'
-        # Compact glassmorphic streak pills on the top right
         f'{glass_panel(640, 34, 152, 28, rx=14, border_col=c["yellow"], border_op=0.55, fill_op=0.65)}'
         f'<text x="716" y="52" text-anchor="middle" font-family="{f["mono"]}" font-size="9.5" font-weight="700" fill="{c["yellow"]}">'
         f'⚡ STREAK: {cur_streak}d</text>'
@@ -917,10 +930,8 @@ def render_contributions(cfg: dict, T: dict, data: dict) -> str:
         f'BEST: {best_streak}d ORBIT</text>'
     )
 
-    # Inner Calendar Container Box (Exact match to screenshot's bordered inner container)
     body += glass_panel(38, 82, 924, 226, rx=12, border_col="#334155", border_op=0.75, fill_op=0.68)
 
-    # Subtle Animated Golden Wave + Scanline inside the calendar box
     wave_path = (
         "M -400,292 "
         "C -250,274 -150,310 0,292 "
@@ -939,19 +950,16 @@ def render_contributions(cfg: dict, T: dict, data: dict) -> str:
         f'</g>'
     )
 
-    # Grid geometry
     gx0 = 104.0
     gy0 = 132.0
     pitch = 15.8
     cell_s = 12.0
 
-    # Day-of-week labels on the left: Mon (row 1), Wed (row 3), Fri (row 5)
     day_labels = [(1, "Mon"), (3, "Wed"), (5, "Fri")]
     for r_idx, d_str in day_labels:
         ly = gy0 + r_idx * pitch + 9.5
         body += f'<text x="60" y="{ly:.1f}" font-family="{f["display"]}" font-size="12" fill="{c["text"]}">{d_str}</text>'
 
-    # Month labels across the top (Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec)
     month_names = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     last_month = None
     last_mx = -100.0
@@ -969,12 +977,6 @@ def render_contributions(cfg: dict, T: dict, data: dict) -> str:
             last_month = m_num
             last_mx = mx
 
-    # 5-Level Yellow/Gold Heatmap Cells
-    # Level 0: #111827 (empty dark slate)
-    # Level 1: #422006 (deep bronze)
-    # Level 2: #854d0e (amber gold)
-    # Level 3: #eab308 (vibrant yellow)
-    # Level 4: #facc15 / #fef08a (luminous peak yellow)
     rng = random.Random(42)
     cells_svg = []
     for w_idx, wk in enumerate(weeks):
@@ -1009,9 +1011,6 @@ def render_contributions(cfg: dict, T: dict, data: dict) -> str:
 
     body += "".join(cells_svg)
 
-    # Bottom row inside calendar container:
-    # Left: "Learn how we count contributions"
-    # Right: "Less [5 yellow squares] More"
     legend_cols = [
         ("#111827", "#1e293b"),
         ("#422006", "#713f12"),
@@ -1035,23 +1034,47 @@ def render_contributions(cfg: dict, T: dict, data: dict) -> str:
     return frame(W, H, body, "365-Day Contribution Calendar Heatmap", T, defs, 28, 17)
 
 
-# ------------------------------------------------------------------ 8. FOOTER
+# ------------------------------------------------------------------ 8. FOOTER (Upgraded Glassmorphic Animated Wave × Yellow HUD Footer)
 def render_footer(cfg: dict, T: dict, data: dict) -> str:
     c, f, L = T["palette"], T["fonts"], T["labels"]
+    W, H = 1000, 168
+    defs = (
+        f'<linearGradient id="footerWaveGrad" x1="0" y1="0" x2="1" y2="0">'
+        f'<stop offset="0" stop-color="{c["primary"]}" stop-opacity="0.1"/>'
+        f'<stop offset="0.5" stop-color="{c["yellow"]}" stop-opacity="0.32"/>'
+        f'<stop offset="1" stop-color="{c["violet"]}" stop-opacity="0.1"/></linearGradient>'
+        '<clipPath id="footerClip"><rect x="34" y="20" width="932" height="128" rx="14"/></clipPath>'
+    )
     wave_chars = []
-    for col in range(88):
+    for col in range(86):
         v = math.sin(col * 0.22) * math.cos(col * 0.07)
         idx = max(0, min(len(PALETTE_ASCII) - 1, int((v * 0.5 + 0.5) * (len(PALETTE_ASCII) - 1))))
         wave_chars.append(PALETTE_ASCII[idx])
     wave_str = "".join(wave_chars)
-    body = (
-        f'{glass_panel(34, 22, 932, 108, rx=14, border_col=c["yellow"], border_op=0.45, fill_op=0.55)}'
-        f'<text x="500" y="46" text-anchor="middle" font-family="{f["mono"]}" font-size="10" font-weight="600" letter-spacing="4" fill="{c["yellow"]}">{esc(L["footer_kicker"])}</text>'
-        f'<text x="500" y="66" text-anchor="middle" font-family="{f["mono"]}" font-size="10" fill="{c["primary"]}" opacity="0.85">{esc(wave_str)}</text>'
-        f'<text x="500" y="96" text-anchor="middle" font-family="{f["display"]}" font-size="24" font-weight="700" fill="{c["text"]}">{esc(L["footer"])}</text>'
-        f'<text x="500" y="116" text-anchor="middle" font-family="{f["mono"]}" font-size="10.5" letter-spacing="2" fill="{c["muted"]}">{esc(L["footer_sub"])}</text>'
+
+    wave_d1 = (
+        "M -400,126 "
+        "C -250,104 -150,144 0,126 "
+        "C 150,104 250,144 400,126 "
+        "C 550,104 650,144 800,126 "
+        "C 950,104 1050,144 1200,126 "
+        "C 1350,104 1450,144 1600,126 "
+        "L 1600,160 L -400,160 Z"
     )
-    return frame(1000, 152, body, "Footer", T, "", 24, 23)
+    body = (
+        f'{glass_panel(34, 20, 932, 128, rx=14, border_col=c["yellow"], border_op=0.55, fill_op=0.65, top_glow=c["yellow"])}'
+        f'<g clip-path="url(#footerClip)">'
+        f'<g><path d="{wave_d1}" fill="url(#footerWaveGrad)" stroke="{c["yellow"]}" stroke-opacity="0.45" stroke-width="1.3"/>'
+        f'<animateTransform attributeName="transform" type="translate" from="0 0" to="-400 0" dur="9s" repeatCount="indefinite"/></g>'
+        f'</g>'
+        f'<circle cx="412" cy="44" r="3.5" fill="{c["yellow"]}">'
+        f'<animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/></circle>'
+        f'<text x="500" y="48" text-anchor="middle" font-family="{f["mono"]}" font-size="10.5" font-weight="700" letter-spacing="4" fill="{c["yellow"]}">{esc(L["footer_kicker"])}</text>'
+        f'<text x="500" y="68" text-anchor="middle" font-family="{f["mono"]}" font-size="9.5" fill="{c["primary"]}" opacity="0.88">{esc(wave_str)}</text>'
+        f'<text x="500" y="100" text-anchor="middle" font-family="{f["display"]}" font-size="25" font-weight="700" letter-spacing="0.5" fill="{c["text"]}">{esc(L["footer"])}</text>'
+        f'<text x="500" y="124" text-anchor="middle" font-family="{f["mono"]}" font-size="10.5" font-weight="600" letter-spacing="2.5" fill="{c["yellow"]}">{esc(L["footer_sub"])}</text>'
+    )
+    return frame(W, H, body, "Footer", T, defs, 28, 23)
 
 
 RENDERERS = {

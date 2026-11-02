@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://robelbiruk.tech">
-    <img src="assets/hero.svg" alt="ROBEL BIRUK — ASCII Portrait & Glassmorphic HUD" width="100%">
+    <img src="assets/hero.svg?v=2026.2" alt="ROBEL BIRUK — ASCII Portrait & Glassmorphic HUD" width="100%">
   </a>
   <br>
   <p>
@@ -21,12 +21,12 @@
 - ⚡ Architecting local-first AI assistants, autonomous Telegram workflows, and developer telemetry tools.
 - ⚡ Full-stack execution across Python (FastAPI), TypeScript/React, Three.js/WebGL, and PostgreSQL.
 - ⚡ Obsessed with deterministic design, high-performance web deployment, and open-source craft.
-- 🛰️ **Live Language Telemetry:** **TypeScript** (39.5%), **Jupyter Notebook** (26.4%), **Python** (16.6%), **JavaScript** (8.2%)
+- 🛰️ **Live Language Telemetry:** **TypeScript** (36.4%), **Python** (31.8%), **JavaScript** (15.2%), **HTML5** (8.4%)
 
 ---
 
 <div align="center">
-  <img src="assets/exhibits.svg" alt="Selected Projects Showcase" width="100%">
+  <img src="assets/exhibits.svg?v=2026.2" alt="Selected Projects Showcase" width="100%">
 </div>
 
 <details open>
@@ -47,30 +47,29 @@
 ---
 
 <div align="center">
-  <img src="assets/instruments.svg" alt="Tech Stack, Language Models & Instruments" width="100%">
+  <img src="assets/instruments.svg?v=2026.2" alt="Tech Stack, Language Models & Instruments" width="100%">
 </div>
 
 ---
 
 <div align="center">
-  <img src="assets/missions.svg" alt="Engineering Trajectory & Milestones" width="100%">
+  <img src="assets/missions.svg?v=2026.2" alt="Engineering Trajectory & Milestones" width="100%">
 </div>
 
 ---
 
 <div align="center">
-  <img src="assets/telemetry.svg" alt="Live GitHub Telemetry & Language Distribution with Icons" width="100%">
+  <img src="assets/telemetry.svg?v=2026.2" alt="Live GitHub Telemetry & Language Distribution with Icons" width="100%">
 </div>
 
 ---
 
 <div align="center">
-  <img src="assets/nexus.svg" alt="Contribution Nexus — Holographic 4-Axis Activity Distribution" width="100%">
+  <img src="assets/nexus.svg?v=2026.2" alt="Contribution Nexus — Holographic 4-Axis Activity Distribution" width="100%">
   <br><br>
-  <img src="assets/contributions.svg" alt="365-Day Contribution Calendar Heatmap" width="100%">
+  <img src="assets/contributions.svg?v=2026.2" alt="365-Day Contribution Calendar Heatmap" width="100%">
   <br><br>
   <a href="https://robelbiruk.tech">
-    <img src="assets/footer.svg" alt="The expedition continues" width="100%">
+    <img src="assets/footer.svg?v=2026.2" alt="The expedition continues" width="100%">
   </a>
-  <p><sub>GENERATED AUTOMATICALLY VIA <a href="https://github.com/Robibiruk/observatory-readme">OBSERVATORY-README</a> · CONTRIBUTION NEXUS · YELLOW GLASSMORPHIC CALENDAR</sub></p>
 </div>
