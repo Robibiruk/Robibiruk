@@ -21,7 +21,7 @@
 - ⚡ Architecting local-first AI assistants, autonomous Telegram workflows, and developer telemetry tools.
 - ⚡ Full-stack execution across Python (FastAPI), TypeScript/React, Three.js/WebGL, and PostgreSQL.
 - ⚡ Obsessed with deterministic design, high-performance web deployment, and open-source craft.
-- 🛰️ **Live Language Telemetry:** **TypeScript** (36.4%), **Python** (31.8%), **JavaScript** (15.2%), **HTML5** (8.4%)
+- 🛰️ **Live Language Telemetry:** **TypeScript** (38.8%), **Jupyter Notebook** (25.9%), **Python** (16.6%), **JavaScript** (8.1%)
 
 ---
 
