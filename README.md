@@ -72,4 +72,5 @@
   <a href="https://robelbiruk.tech">
     <img src="assets/footer.svg?v=2026.2" alt="The expedition continues" width="100%">
   </a>
+  [![Starred on StarSwap](https://www.fenriryt.me/badge/robibiruk)](https://www.fenriryt.me/u/robibiruk?ref=badge)
 </div>
